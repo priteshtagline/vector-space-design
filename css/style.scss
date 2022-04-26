@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1.h2.h3.h4.h5.h6 {
+    font-family: "Trade Gothic Next LT Pro Cn";
+}
+
+.section {
+    padding: 70px 0;
+}
+
+// navbar
+
+.navbar {
+    background: #011945 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 40px 67px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    .navbar-brand {
+        h6 {
+            color: #ffffff;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    }
+    .navbar-nav {
+        li {
+            a {
+                padding: 10px 20px;
+                color: #f4ec7e;
+                font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
+                letter-spacing: 0px;
+                color: #f4ec7e;
+                text-transform: uppercase;
+                opacity: 1;
+            }
+        }
+    }
+}

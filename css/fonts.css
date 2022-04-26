@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trade Gothic Next LT Pro Cn';
+    src: url('/fonts/Trade\ Gothic\ Next\ LT\ Pro\ Cn.otf');
+    font-weight: bold;
+    font-style: normal;
+}
