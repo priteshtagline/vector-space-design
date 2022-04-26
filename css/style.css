@@ -17,6 +17,10 @@ h1.h2.h3.h4.h5.h6 {
   font-family: "Trade Gothic Next LT Pro Cn";
 }
 
+li {
+  list-style-type: none;
+}
+
 .section {
   padding: 70px 0;
 }
@@ -25,14 +29,24 @@ h1.h2.h3.h4.h5.h6 {
   background: #011945 0% 0% no-repeat padding-box;
   opacity: 1;
   padding: 40px 67px;
-  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.navbar .navbar-brand img {
+  margin-right: 10px;
 }
 
 .navbar .navbar-brand h6 {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
   text-transform: uppercase;
+}
+
+.navbar .navbar-nav li {
+  padding: 10px 40px 10px 60px;
 }
 
 .navbar .navbar-nav li a {
@@ -43,5 +57,247 @@ h1.h2.h3.h4.h5.h6 {
   color: #f4ec7e;
   text-transform: uppercase;
   opacity: 1;
+}
+
+footer {
+  background: #011945 0% 0% no-repeat padding-box;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+footer .footer-top {
+  border-bottom: 1px solid #98c0c9;
+  padding: 30px 67px;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-top {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 620px) {
+  footer .footer-top {
+    padding: 20px 0px;
+  }
+}
+
+footer .footer-top .footer-left .footer-brand img {
+  margin-right: 10px;
+}
+
+footer .footer-top .footer-left .footer-brand h6 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+footer .footer-top .footer-left .footer-menu ul li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-top .footer-left .footer-menu ul li {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer-top .footer-left .footer-menu ul li {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  footer .footer-top .footer-left .footer-menu ul li {
+    margin-right: 6px;
+  }
+}
+
+footer .footer-top .footer-left .footer-menu ul li a {
+  font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
+  letter-spacing: 0px;
+  color: #f4ec7e;
+  text-transform: uppercase;
+  opacity: 1;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-top .footer-left .footer-menu ul li a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer-top .footer-left .footer-menu ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  footer .footer-top .footer-left .footer-menu ul li a {
+    font-size: 9px;
+  }
+}
+
+footer .footer-top .footer-right h6 {
+  font: normal normal bold 20px Trade Gothic Next LT Pro Cn;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+footer .footer-top .footer-right h6 span {
+  color: #f4ec7e;
+}
+
+footer .footer-top .footer-right .footer-form input[type="text"] {
+  color: #ffffff;
+  max-width: 416px;
+  margin-right: 25px;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+@media (max-width: 992px) {
+  footer .footer-top .footer-right .footer-form input[type="text"] {
+    padding: 7px 10px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  footer .footer-top .footer-right .footer-form input[type="text"] {
+    margin-right: 7px;
+  }
+}
+
+footer .footer-top .footer-right .footer-form input[type="submit"] {
+  text-align: center;
+  color: #000000;
+  border: none;
+  padding: 10px 50px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  footer .footer-top .footer-right .footer-form input[type="submit"] {
+    padding: 10px 30px;
+  }
+}
+
+footer .footer-top .footer-right .footer-form input[type="text"]::-webkit-input-placeholder {
+  /* Edge */
+  color: #ffffff;
+}
+
+footer .footer-top .footer-right .footer-form input[type="text"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+footer .footer-top .footer-right .footer-form input[type="text"]::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+footer .footer-top .footer-right .footer-form input[type="text"]::placeholder {
+  color: #ffffff;
+}
+
+footer .footer-top .footer-right .social-list li a {
+  background: #f4ec7e 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 4px 8px;
+  margin-right: 35px;
+  text-align: center;
+  font: normal normal bold 30px/27px Scotch Text;
+  letter-spacing: 0px;
+  color: #14375e;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-top .footer-right .social-list li a {
+    padding: 2px 6px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer-top .footer-right .social-list li a {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  footer .footer-top .footer-right .social-list li a {
+    margin-right: 14px;
+  }
+}
+
+footer .footer-bottom {
+  padding: 20px 67px;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-bottom {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 620px) {
+  footer .footer-bottom {
+    padding: 20px 0px;
+  }
+}
+
+footer .footer-bottom .footer-privacy a h6 {
+  font: normal normal normal 13px/17px Trade Gothic Next LT Pro Cn;
+  color: #f4ec7e;
+  text-transform: uppercase;
+  margin-right: 17px;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-bottom .footer-privacy a h6 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer-bottom .footer-privacy a h6 {
+    font-size: 10px;
+  }
+}
+
+footer .footer-bottom .footer-rights a h6 {
+  font: normal normal normal 13px/17px Trade Gothic Next LT Pro Cn;
+  letter-spacing: 0px;
+  color: #f4ec7e;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-bottom .footer-rights a h6 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer-bottom .footer-rights a h6 {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

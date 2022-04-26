@@ -15,27 +15,35 @@ h1.h2.h3.h4.h5.h6 {
     font-family: "Trade Gothic Next LT Pro Cn";
 }
 
+li {
+    list-style-type: none;
+}
+
 .section {
     padding: 70px 0;
 }
 
 // navbar
-
 .navbar {
     background: #011945 0% 0% no-repeat padding-box;
     opacity: 1;
     padding: 40px 67px;
     backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
     .navbar-brand {
+        img {
+            margin-right: 10px;
+        }
         h6 {
             color: #ffffff;
-            font-size: 24px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 0;
             text-transform: uppercase;
         }
     }
     .navbar-nav {
         li {
+            padding: 10px 40px 10px 60px;
             a {
                 padding: 10px 20px;
                 color: #f4ec7e;
@@ -44,6 +52,195 @@ h1.h2.h3.h4.h5.h6 {
                 color: #f4ec7e;
                 text-transform: uppercase;
                 opacity: 1;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    background: #011945 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(6px);
+    .footer-top {
+        border-bottom: 1px solid #98c0c9;
+        padding: 30px 67px;
+        @media (max-width: 1200px) {
+            padding: 30px;
+        }
+        @media (max-width: 620px) {
+            padding: 20px 0px;
+        }
+
+        .footer-left {
+            .footer-brand {
+                img {
+                    margin-right: 10px;
+                }
+                h6 {
+                    color: #ffffff;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                }
+            }
+            .footer-menu {
+                ul {
+                    li {
+                        list-style-type: none;
+                        margin-right: 30px;
+                        @media (max-width: 1200px) {
+                            margin-right: 20px;
+                        }
+                        @media (max-width: 992px) {
+                            margin-right: 10px;
+                        }
+                        @media (max-width: 620px) {
+                            margin-right: 6px;
+                        }
+                        a {
+                            font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
+                            letter-spacing: 0px;
+                            color: #f4ec7e;
+                            text-transform: uppercase;
+                            opacity: 1;
+                            text-decoration: none;
+                            @media (max-width: 1200px) {
+                                font-size: 13px;
+                            }
+                            @media (max-width: 992px) {
+                                font-size: 12px;
+                            }
+                            @media (max-width: 620px) {
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-right {
+            h6 {
+                font: normal normal bold 20px Trade Gothic Next LT Pro Cn;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+                color: #ffffff;
+                text-transform: uppercase;
+                span {
+                    color: #f4ec7e;
+                }
+            }
+            .footer-form {
+                input[type="text"] {
+                    color: #ffffff;
+                    max-width: 416px;
+                    margin-right: 25px;
+                    width: 100%;
+                    padding: 10px 15px;
+                    background-color: transparent;
+                    border: 1px solid #ffffff;
+                    @media (max-width: 992px) {
+                        padding: 7px 10px;
+                        margin-right: 15px;
+                    }
+                    @media (max-width: 620px) {
+                        margin-right: 7px;
+                    }
+                }
+                input[type="submit"] {
+                    text-align: center;
+                    color: #000000;
+                    border: none;
+                    padding: 10px 50px;
+                    background: #ffffff 0% 0% no-repeat padding-box;
+                    border-radius: 20px;
+                    font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    @media (max-width: 992px) {
+                        padding: 10px 30px;
+                    }
+                }
+                input[type="text"]::-webkit-input-placeholder {
+                    /* Edge */
+                    color: #ffffff;
+                }
+
+                input[type="text"]:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #ffffff;
+                }
+
+                input[type="text"]::placeholder {
+                    color: #ffffff;
+                }
+            }
+            .social-list {
+                li {
+                    a {
+                        background: #f4ec7e 0% 0% no-repeat padding-box;
+                        border-radius: 4px;
+                        text-decoration: none;
+                        padding: 4px 8px;
+                        margin-right: 35px;
+                        text-align: center;
+                        font: normal normal bold 30px/27px Scotch Text;
+                        letter-spacing: 0px;
+                        color: #14375e;
+                        @media (max-width: 1200px) {
+                            padding: 2px 6px;
+                            margin-right: 25px;
+                        }
+                        @media (max-width: 992px) {
+                            margin-right: 20px;
+                        }
+                        @media (max-width: 620px) {
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 20px 67px;
+        @media (max-width: 1200px) {
+            padding: 20px 30px;
+        }
+        @media (max-width: 620px) {
+            padding: 20px 0px;
+        }
+        .footer-privacy {
+            a {
+                h6 {
+                    font: normal normal normal 13px/17px Trade Gothic Next LT Pro Cn;
+                    color: #f4ec7e;
+                    text-transform: uppercase;
+                    margin-right: 17px;
+                    @media (max-width: 1200px) {
+                        font-size: 12px;
+                    }
+                    @media (max-width: 992px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .footer-rights {
+            a {
+                h6 {
+                    font: normal normal normal 13px/17px Trade Gothic Next LT Pro Cn;
+                    letter-spacing: 0px;
+                    color: #f4ec7e;
+                    text-transform: uppercase;
+                    @media (max-width: 1200px) {
+                        font-size: 12px;
+                    }
+                    @media (max-width: 992px) {
+                        font-size: 10px;
+                    }
+                }
             }
         }
     }
