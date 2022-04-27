@@ -18,40 +18,81 @@ h1.h2.h3.h4.h5.h6 {
 li {
     list-style-type: none;
 }
-
-.section {
-    padding: 70px 0;
+p {
+    line-height: 26px;
 }
-
+.text-yellow {
+    color: #f4ec7e !important;
+}
+.text-orange {
+    color: #E57D55 !important;
+}
+.text-blue {
+    color: #729bad !important;
+}
+.text-purple {
+    color: #4B00D9 !important;
+}
+.btn {
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 8px 25px;
+}
+.btn-orange {
+    background-color: #E57D55;
+    color: #050e1a;
+}
+.btn-orange:hover {
+    background-color: #E57D55;
+    color: #050e1a;
+}
+.btn-blue {
+    background-color: #729bad;
+    color: #050e1a;
+}
+.btn-blue:hover {
+    background-color: #729bad;
+    color: #050e1a;
+}
+.btn-yellow {
+    background-color: #f4ec7e;
+    color: #050e1a;
+}
+.btn-yellow:hover {
+    background-color: #f4ec7e;
+    color: #050e1a;
+}
 // navbar
-.navbar {
-    background: #011945 0% 0% no-repeat padding-box;
-    opacity: 1;
-    padding: 40px 67px;
-    backdrop-filter: blur(6px);
-    .navbar-brand {
-        img {
-            margin-right: 10px;
-        }
-        h6 {
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 0;
-            text-transform: uppercase;
-        }
-    }
-    .navbar-nav {
-        li {
-            padding: 10px 40px 10px 60px;
-            a {
-                padding: 10px 20px;
-                color: #f4ec7e;
-                font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
-                letter-spacing: 0px;
-                color: #f4ec7e;
+header {
+    .navbar {
+        background: #011945 0% 0% no-repeat padding-box;
+        opacity: 1;
+        padding: 40px 67px;
+        backdrop-filter: blur(6px);
+        .navbar-brand {
+            img {
+                margin-right: 10px;
+            }
+            h6 {
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 0;
                 text-transform: uppercase;
-                opacity: 1;
+            }
+        }
+        .navbar-nav {
+            li {
+                padding: 10px 40px 10px 60px;
+                a {
+                    padding: 10px 20px;
+                    color: #f4ec7e;
+                    font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
+                    letter-spacing: 0px;
+                    color: #f4ec7e;
+                    text-transform: uppercase;
+                    opacity: 1;
+                }
             }
         }
     }
@@ -240,6 +281,240 @@ footer {
                     @media (max-width: 992px) {
                         font-size: 10px;
                     }
+                }
+            }
+        }
+    }
+}
+
+.fullpage-wrapper {
+    .fp-section {
+        padding: 142px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index: -1;
+}
+.banner-intro {
+    h1 {
+        color: #fff;
+        margin-bottom: 40px;
+        line-height: 52px;
+        font-family: "TradeGothicNextLTProBdCn";
+        text-transform: uppercase;
+    }
+    h2 {
+        color: #fff;
+        margin-bottom: 40px;
+        line-height: 52px;
+        font-size: 60px;
+        font-family: "TradeGothicNextLTProBdCn";
+        text-transform: uppercase;
+    }
+    p {
+        color: #fff;
+    }
+}
+.fp-dots {
+    position: fixed;
+    z-index: 100;
+    top: 142px;
+    left: 3%;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+    bottom: 0;
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        li {
+            margin: 0;
+            height: 50%;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 7px;
+                height: -moz-calc(50% - 15px);
+                height: -webkit-calc(50% - 15px);
+                height: calc(50% - 15px);
+                width: 1px;
+                background-color: rgba(255, 255, 255, 0.5);
+                top: 100%;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 7px;
+                height: 50%;
+                width: 1px;
+                background-color: rgba(255, 255, 255, 0.5);
+                bottom: 100%;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                position: relative;
+                span {
+                    border-radius: 100%;
+                    width: 15px;
+                    height: 15px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    left: 0;
+                    margin: 0;
+                    -moz-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+                &.active {
+                    span {
+                        width: 15px;
+                        height: 15px;  
+                        margin: 0;
+                    }
+                }
+            }
+            &:first-child {
+                a {
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 7px;
+                        height: -moz-calc(50% - 15px);
+                        height: -webkit-calc(50% - 15px);
+                        height: calc(50% - 15px);
+                        width: 1px;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        top: 0;
+                    }
+                }
+            }
+            &:last-child {
+                a {
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 7px;
+                        height: 50%;
+                        width: 1px;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        bottom: 0;
+                    }
+                }
+            }
+            &.yellow-dot {
+                span {
+                    border-color: #f4ec7e;
+                }
+                &.active {
+                    span {
+                        background-color: #f4ec7e;
+                    }
+                }
+            }
+            &.red-dot {
+                span {
+                    border-color: #e57d54;
+                }
+                &.active {
+                    span {
+                        background-color: #e57d54;
+                    }
+                }
+            }
+            &.blue-dot {
+                span {
+                    border-color: #729dad;
+                }
+                &.active {
+                    span {
+                        background-color: #729dad;
+                    }
+                }
+            }
+            &.purple-dot {
+                span {
+                    border-color: #4B00D9;
+                }
+                &.active {
+                    span {
+                        background-color: #4B00D9;
+                    }
+                }
+            }
+        }
+    }
+}
+.scroll-down {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-family: "TradeGothicNextLTProBdCn";
+    .scroll-wrap {
+       display: inline-block;
+       position: relative; 
+        span {
+            height: 40px;
+            width: 1px;
+            background-color: #fff;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 5px auto 0;
+            top: 100%;
+            &:before {
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-radius: 100%;
+                position: absolute;
+                top: 100%;
+                left: -5px;
+                right: 0;
+            }
+        }
+        &.text-yellow {
+            span {
+                background-color: #f4ec7e;
+                &:before {
+                    background-color: #f4ec7e;
+                }
+            }
+        }
+        &.text-orange {
+            span {
+                background-color: #E57D55;
+                &:before {
+                    background-color: #E57D55;
+                }
+            }
+        }
+        &.text-blue {
+            span {
+                background-color: #729bad;
+                &:before {
+                    background-color: #729bad;
                 }
             }
         }

@@ -21,11 +21,63 @@ li {
   list-style-type: none;
 }
 
-.section {
-  padding: 70px 0;
+p {
+  line-height: 26px;
 }
 
-.navbar {
+.text-yellow {
+  color: #f4ec7e !important;
+}
+
+.text-orange {
+  color: #E57D55 !important;
+}
+
+.text-blue {
+  color: #729bad !important;
+}
+
+.text-purple {
+  color: #4B00D9 !important;
+}
+
+.btn {
+  border-radius: 40px;
+  text-transform: uppercase;
+  padding: 8px 25px;
+}
+
+.btn-orange {
+  background-color: #E57D55;
+  color: #050e1a;
+}
+
+.btn-orange:hover {
+  background-color: #E57D55;
+  color: #050e1a;
+}
+
+.btn-blue {
+  background-color: #729bad;
+  color: #050e1a;
+}
+
+.btn-blue:hover {
+  background-color: #729bad;
+  color: #050e1a;
+}
+
+.btn-yellow {
+  background-color: #f4ec7e;
+  color: #050e1a;
+}
+
+.btn-yellow:hover {
+  background-color: #f4ec7e;
+  color: #050e1a;
+}
+
+header .navbar {
   background: #011945 0% 0% no-repeat padding-box;
   opacity: 1;
   padding: 40px 67px;
@@ -33,11 +85,11 @@ li {
           backdrop-filter: blur(6px);
 }
 
-.navbar .navbar-brand img {
+header .navbar .navbar-brand img {
   margin-right: 10px;
 }
 
-.navbar .navbar-brand h6 {
+header .navbar .navbar-brand h6 {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -45,11 +97,11 @@ li {
   text-transform: uppercase;
 }
 
-.navbar .navbar-nav li {
+header .navbar .navbar-nav li {
   padding: 10px 40px 10px 60px;
 }
 
-.navbar .navbar-nav li a {
+header .navbar .navbar-nav li a {
   padding: 10px 20px;
   color: #f4ec7e;
   font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
@@ -299,5 +351,247 @@ footer .footer-bottom .footer-rights a h6 {
   footer .footer-bottom .footer-rights a h6 {
     font-size: 10px;
   }
+}
+
+.fullpage-wrapper .fp-section {
+  padding: 142px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-position: center center;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*cover video background */
+  z-index: -1;
+}
+
+.banner-intro h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 52px;
+  font-family: "TradeGothicNextLTProBdCn";
+  text-transform: uppercase;
+}
+
+.banner-intro h2 {
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 52px;
+  font-size: 60px;
+  font-family: "TradeGothicNextLTProBdCn";
+  text-transform: uppercase;
+}
+
+.banner-intro p {
+  color: #fff;
+}
+
+.fp-dots {
+  position: fixed;
+  z-index: 100;
+  top: 142px;
+  left: 3%;
+  -webkit-transform: none;
+  transform: none;
+  bottom: 0;
+}
+
+.fp-dots ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.fp-dots ul li {
+  margin: 0;
+  height: 50%;
+  position: relative;
+}
+
+.fp-dots ul li::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  height: calc(50% - 15px);
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 100%;
+}
+
+.fp-dots ul li::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  height: 50%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 100%;
+}
+
+.fp-dots ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.fp-dots ul li a span {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  left: 0;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.fp-dots ul li a.active span {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.fp-dots ul li:first-child a:before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  height: calc(50% - 15px);
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+}
+
+.fp-dots ul li:last-child a:before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  height: 50%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+}
+
+.fp-dots ul li.yellow-dot span {
+  border-color: #f4ec7e;
+}
+
+.fp-dots ul li.yellow-dot.active span {
+  background-color: #f4ec7e;
+}
+
+.fp-dots ul li.red-dot span {
+  border-color: #e57d54;
+}
+
+.fp-dots ul li.red-dot.active span {
+  background-color: #e57d54;
+}
+
+.fp-dots ul li.blue-dot span {
+  border-color: #729dad;
+}
+
+.fp-dots ul li.blue-dot.active span {
+  background-color: #729dad;
+}
+
+.fp-dots ul li.purple-dot span {
+  border-color: #4B00D9;
+}
+
+.fp-dots ul li.purple-dot.active span {
+  background-color: #4B00D9;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-family: "TradeGothicNextLTProBdCn";
+}
+
+.scroll-down .scroll-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.scroll-down .scroll-wrap span {
+  height: 40px;
+  width: 1px;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 5px auto 0;
+  top: 100%;
+}
+
+.scroll-down .scroll-wrap span:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  right: 0;
+}
+
+.scroll-down .scroll-wrap.text-yellow span {
+  background-color: #f4ec7e;
+}
+
+.scroll-down .scroll-wrap.text-yellow span:before {
+  background-color: #f4ec7e;
+}
+
+.scroll-down .scroll-wrap.text-orange span {
+  background-color: #E57D55;
+}
+
+.scroll-down .scroll-wrap.text-orange span:before {
+  background-color: #E57D55;
+}
+
+.scroll-down .scroll-wrap.text-blue span {
+  background-color: #729bad;
+}
+
+.scroll-down .scroll-wrap.text-blue span:before {
+  background-color: #729bad;
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,3 +11,11 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {font-family: "TradeGothicNextLTProBdCn";
+src: url("../fonts/TradeGothicNextLTProBdCn.eot"); /* IE9*/
+    src: url("../fonts/TradeGothicNextLTProBdCn.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/TradeGothicNextLTProBdCn.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/TradeGothicNextLTProBdCn.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/TradeGothicNextLTProBdCn.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/TradeGothicNextLTProBdCn.svg#Trade Gothic Next LT Pro BdCn") format("svg"); /* iOS 4.1- */
+  }
