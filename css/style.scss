@@ -303,17 +303,20 @@ footer {
     }
 }
 
+.section {
+    padding: 250px 0 80px;
+}
+footer {
+    &.section {
+        padding: 0;
+    }
+}
 .fullpage-wrapper {
     .fp-section {
-        padding: 150px 0 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-    footer {
-        &.fp-section {
-            padding: 0;
-        }
+        padding: 150px 0 80px;
     }
 }
 .bg-video {
@@ -515,27 +518,29 @@ footer {
                 right: 0;
             }
         }
-        &.text-yellow {
-            span {
-                background-color: #f4ec7e;
-                &:before {
+        a {
+            &.text-yellow {
+                span {
                     background-color: #f4ec7e;
+                    &:before {
+                        background-color: #f4ec7e;
+                    }
                 }
             }
-        }
-        &.text-orange {
-            span {
-                background-color: #E57D55;
-                &:before {
+            &.text-orange {
+                span {
                     background-color: #E57D55;
+                    &:before {
+                        background-color: #E57D55;
+                    }
                 }
             }
-        }
-        &.text-blue {
-            span {
-                background-color: #729bad;
-                &:before {
+            &.text-blue {
+                span {
                     background-color: #729bad;
+                    &:before {
+                        background-color: #729bad;
+                    }
                 }
             }
         }
@@ -594,4 +599,27 @@ footer {
 }
 .collaborate-logo {
     margin-top: 50px;
+}
+.collaborate-section {
+    min-height: 1400px;
+    .collaborate-text {
+        position: relative;
+        padding: 30px;
+        z-index: 1;
+        &::before {
+            content: "";
+            left: -100%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            background-color: rgba(114, 157, 173, 0.6);
+            z-index: -1;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px); 
+        }
+        p {
+            font-size: 18px;
+        }
+    }
 }
