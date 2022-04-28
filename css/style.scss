@@ -11,7 +11,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1.h2.h3.h4.h5.h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: "Trade Gothic Next LT Pro Cn";
 }
 
@@ -37,6 +37,7 @@ p {
     border-radius: 40px;
     text-transform: uppercase;
     padding: 8px 25px;
+    font-family: "Trade Gothic Next LT Pro Cn";
 }
 .btn-orange {
     background-color: #E57D55;
@@ -62,12 +63,23 @@ p {
     background-color: #f4ec7e;
     color: #050e1a;
 }
+.btn-white {
+    background-color: #ffffff;
+    color: #050e1a;
+}
+.btn-white:hover {
+    background-color: #ffffff;
+    color: #050e1a;
+}
+.fp-watermark {
+    display: none;
+}
 // navbar
 header {
     .navbar {
         background: #011945 0% 0% no-repeat padding-box;
         opacity: 1;
-        padding: 40px 67px;
+        padding: 35px 67px;
         backdrop-filter: blur(6px);
         .navbar-brand {
             img {
@@ -104,7 +116,7 @@ footer {
     opacity: 1;
     backdrop-filter: blur(6px);
     .footer-top {
-        border-bottom: 1px solid #98c0c9;
+        border-bottom: 1px solid #fff;
         padding: 30px 67px;
         @media (max-width: 1200px) {
             padding: 30px;
@@ -226,9 +238,13 @@ footer {
                         padding: 4px 8px;
                         margin-right: 35px;
                         text-align: center;
-                        font: normal normal bold 30px/27px Scotch Text;
+                        font: normal normal bold 26px Scotch Text;
                         letter-spacing: 0px;
                         color: #14375e;
+                        width: 45px;
+                        display: block;
+                        height: 45px;
+                        line-height: 42px;
                         @media (max-width: 1200px) {
                             padding: 2px 6px;
                             margin-right: 25px;
@@ -289,10 +305,15 @@ footer {
 
 .fullpage-wrapper {
     .fp-section {
-        padding: 142px 0;
+        padding: 150px 0 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    footer {
+        &.fp-section {
+            padding: 0;
+        }
     }
 }
 .bg-video {
@@ -519,4 +540,58 @@ footer {
             }
         }
     }
+}
+.technology-wrap {
+    background-color: rgba(75, 0, 217, 0.45);
+    padding: 60px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.icon-box {
+    margin-top: 50px;
+    max-width: 400px;
+    .icon {
+        float: left;
+        width: 90px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .box-content {
+        overflow: hidden;
+        h5 {
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 0;
+        }
+    }
+}
+[class*="col-md"] {
+    &:nth-child(-n+2) {
+        .icon-box {
+            margin-top: 0;
+        }
+    }
+    &:nth-child(2n) {
+        .icon-box {
+            margin-left: auto;
+        }
+    }
+}
+.scientific-collaborators {
+    background-color: #729bad;
+    padding: 40px;
+    p {
+        color: #fff;
+        margin: 0;
+    }
+}
+.collaborate-logo {
+    margin-top: 50px;
 }
