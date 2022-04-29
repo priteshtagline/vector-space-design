@@ -13,7 +13,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Trade Gothic Next LT Pro Cn";
 }
 
@@ -30,7 +35,7 @@ p {
 }
 
 .text-orange {
-  color: #E57D55 !important;
+  color: #e57d55 !important;
 }
 
 .text-blue {
@@ -38,7 +43,7 @@ p {
 }
 
 .text-purple {
-  color: #4B00D9 !important;
+  color: #4b00d9 !important;
 }
 
 .btn {
@@ -49,12 +54,12 @@ p {
 }
 
 .btn-orange {
-  background-color: #E57D55;
+  background-color: #e57d55;
   color: #050e1a;
 }
 
 .btn-orange:hover {
-  background-color: #E57D55;
+  background-color: #e57d55;
   color: #050e1a;
 }
 
@@ -93,7 +98,7 @@ p {
 }
 
 header .navbar {
-  background: #011945 0% 0% no-repeat padding-box;
+  background: rgba(1, 25, 69, 0.7) 0% 0% no-repeat padding-box;
   opacity: 1;
   padding: 35px 67px;
   -webkit-backdrop-filter: blur(6px);
@@ -377,7 +382,7 @@ footer .footer-bottom .footer-rights a h6 {
 }
 
 footer.section {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .fullpage-wrapper .fp-section {
@@ -554,11 +559,11 @@ footer.section {
 }
 
 .fp-dots ul li.purple-dot span {
-  border-color: #4B00D9;
+  border-color: #4b00d9;
 }
 
 .fp-dots ul li.purple-dot.active span {
-  background-color: #4B00D9;
+  background-color: #4b00d9;
 }
 
 .scroll-down {
@@ -606,19 +611,19 @@ footer.section {
   background-color: #f4ec7e;
 }
 
-.scroll-down .scroll-wrap a.text-orange span {
-  background-color: #E57D55;
+.scroll-down .scroll-wrap.text-orange span {
+  background-color: #e57d55;
 }
 
-.scroll-down .scroll-wrap a.text-orange span:before {
-  background-color: #E57D55;
+.scroll-down .scroll-wrap.text-orange span:before {
+  background-color: #e57d55;
 }
 
-.scroll-down .scroll-wrap a.text-blue span {
+.scroll-down .scroll-wrap.text-orange.text-blue span {
   background-color: #729bad;
 }
 
-.scroll-down .scroll-wrap a.text-blue span:before {
+.scroll-down .scroll-wrap.text-orange.text-blue span:before {
   background-color: #729bad;
 }
 
@@ -658,7 +663,7 @@ footer.section {
   margin-bottom: 0;
 }
 
-[class*="col-md"]:nth-child(-n+2) .icon-box {
+[class*="col-md"]:nth-child(-n + 2) .icon-box {
   margin-top: 0;
 }
 
