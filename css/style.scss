@@ -1,3 +1,5 @@
+$theme-primary-color: #011945;
+
 * {
     margin: 0;
     padding: 0;
@@ -77,15 +79,28 @@ p {
     color: #050e1a;
 }
 .bg-light-blue {
-    background-color: #729DAD;
+    background-color: #729dad;
 }
 .fp-watermark {
     display: none;
 }
+
+.comman-banner-title {
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 52px;
+    font-size: 60px;
+    font-family: "TradeGothicNextLTProBdCn";
+    text-transform: uppercase;
+    &.text-purple-color {
+        color: $theme-primary-color;
+    }
+}
+
 // navbar
 header {
     .navbar {
-        background: rgba(1, 25, 69, 0.7) 0% 0% no-repeat padding-box;
+        background: rgba(1, 25, 69, 0.6) 0% 0% no-repeat padding-box;
         opacity: 1;
         padding: 35px 0px;
         backdrop-filter: blur(6px);
@@ -120,7 +135,7 @@ header {
 
 // Footer
 footer {
-    background: #011945 0% 0% no-repeat padding-box;
+    background: $theme-primary-color 0% 0% no-repeat padding-box;
     opacity: 1;
     backdrop-filter: blur(6px);
     .footer-top {
@@ -349,14 +364,6 @@ footer {
         font-family: "TradeGothicNextLTProBdCn";
         text-transform: uppercase;
     }
-    h2 {
-        color: #fff;
-        margin-bottom: 40px;
-        line-height: 52px;
-        font-size: 60px;
-        font-family: "TradeGothicNextLTProBdCn";
-        text-transform: uppercase;
-    }
     h3 {
         font-size: 40px;
     }
@@ -567,7 +574,6 @@ footer {
     padding: 60px;
     position: relative;
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
 }
 
 .icon-box {
@@ -632,7 +638,6 @@ footer {
             background-color: rgba(114, 157, 173, 0.6);
             z-index: -1;
             backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
         }
         p {
             font-size: 18px;
@@ -643,5 +648,95 @@ footer {
 @media (min-width: 1280px) {
     .container {
         max-width: 1240px;
+    }
+}
+
+.contact-section {
+    min-height: 1154px;
+    .contact-form {
+        .contact-info-title {
+            font-size: 60px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        form {
+            .form-group {
+                margin-bottom: 35px;
+                label {
+                    font-family: "Trade Gothic Next LT Pro Cn";
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    color: #fff;
+                }
+                input,
+                textarea {
+                    padding: 16px;
+                    border-radius: 0;
+                    background-color: #fafafa;
+                    border-color: #ffffff;
+                    border-width: 1.25px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $theme-primary-color;
+                    resize: none;
+                    &::placeholder {
+                        color: $theme-primary-color;
+                    }
+                }
+                select {
+                    padding: 16px;
+                    border-radius: 0;
+                    height: auto !important;
+                    background-color: #fafafa;
+                    border-color: #ffffff;
+                    border-width: 1.25px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $theme-primary-color;
+                    appearance: none;
+                    background-image: url(../images/dropdown-arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: 96% 55%;
+                }
+            }
+        }
+    }
+}
+
+.press-section {
+    .container {
+        max-width: 1024px;
+    }
+    .press-highlight-wrap {
+        padding-top: 37px;
+        .press-highlight-list {
+            padding-bottom: 18px;
+            margin-bottom: 52px;
+            border-bottom: 0.75px solid $theme-primary-color;
+            &:last-child {
+                border-bottom-color: transparent;
+            }
+            .heighlight-year {
+                font-size: 28px;
+                margin-bottom: 25px;
+                color: #729dad;
+            }
+            li {
+                margin-bottom: 30px;
+                .heighlight-content {
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                    color: $theme-primary-color;
+                    font-family: "TradeGothicNextLTProBdCn";
+                }
+                .heighlight-time {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    color: $theme-primary-color;
+                    font-weight: 500;
+                }
+            }
+        }
     }
 }

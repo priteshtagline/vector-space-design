@@ -94,15 +94,28 @@ p {
 }
 
 .bg-light-blue {
-  background-color: #729DAD;
+  background-color: #729dad;
 }
 
 .fp-watermark {
   display: none;
 }
 
+.comman-banner-title {
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 52px;
+  font-size: 60px;
+  font-family: "TradeGothicNextLTProBdCn";
+  text-transform: uppercase;
+}
+
+.comman-banner-title.text-purple-color {
+  color: #011945;
+}
+
 header .navbar {
-  background: rgba(1, 25, 69, 0.7) 0% 0% no-repeat padding-box;
+  background: rgba(1, 25, 69, 0.6) 0% 0% no-repeat padding-box;
   opacity: 1;
   padding: 35px 0px;
   -webkit-backdrop-filter: blur(6px);
@@ -428,15 +441,6 @@ footer.section {
   text-transform: uppercase;
 }
 
-.banner-intro h2 {
-  color: #fff;
-  margin-bottom: 40px;
-  line-height: 52px;
-  font-size: 60px;
-  font-family: "TradeGothicNextLTProBdCn";
-  text-transform: uppercase;
-}
-
 .banner-intro h3 {
   font-size: 40px;
 }
@@ -643,8 +647,8 @@ footer.section {
   background-color: rgba(75, 0, 217, 0.45);
   padding: 60px;
   position: relative;
-  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 
 .icon-box {
@@ -716,8 +720,8 @@ footer.section {
   position: absolute;
   background-color: rgba(114, 157, 173, 0.6);
   z-index: -1;
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .collaborate-section .collaborate-text p {
@@ -728,5 +732,120 @@ footer.section {
   .container {
     max-width: 1240px;
   }
+}
+
+.contact-section {
+  min-height: 1154px;
+}
+
+.contact-section .contact-form .contact-info-title {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.contact-section .contact-form form .form-group {
+  margin-bottom: 35px;
+}
+
+.contact-section .contact-form form .form-group label {
+  font-family: "Trade Gothic Next LT Pro Cn";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+}
+
+.contact-section .contact-form form .form-group input,
+.contact-section .contact-form form .form-group textarea {
+  padding: 16px;
+  border-radius: 0;
+  background-color: #fafafa;
+  border-color: #ffffff;
+  border-width: 1.25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #011945;
+  resize: none;
+}
+
+.contact-section .contact-form form .form-group input::-webkit-input-placeholder,
+.contact-section .contact-form form .form-group textarea::-webkit-input-placeholder {
+  color: #011945;
+}
+
+.contact-section .contact-form form .form-group input:-ms-input-placeholder,
+.contact-section .contact-form form .form-group textarea:-ms-input-placeholder {
+  color: #011945;
+}
+
+.contact-section .contact-form form .form-group input::-ms-input-placeholder,
+.contact-section .contact-form form .form-group textarea::-ms-input-placeholder {
+  color: #011945;
+}
+
+.contact-section .contact-form form .form-group input::placeholder,
+.contact-section .contact-form form .form-group textarea::placeholder {
+  color: #011945;
+}
+
+.contact-section .contact-form form .form-group select {
+  padding: 16px;
+  border-radius: 0;
+  height: auto !important;
+  background-color: #fafafa;
+  border-color: #ffffff;
+  border-width: 1.25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #011945;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../images/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 96% 55%;
+}
+
+.press-section .container {
+  max-width: 1024px;
+}
+
+.press-section .press-highlight-wrap {
+  padding-top: 37px;
+}
+
+.press-section .press-highlight-wrap .press-highlight-list {
+  padding-bottom: 18px;
+  margin-bottom: 52px;
+  border-bottom: 0.75px solid #011945;
+}
+
+.press-section .press-highlight-wrap .press-highlight-list:last-child {
+  border-bottom-color: transparent;
+}
+
+.press-section .press-highlight-wrap .press-highlight-list .heighlight-year {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #729dad;
+}
+
+.press-section .press-highlight-wrap .press-highlight-list li {
+  margin-bottom: 30px;
+}
+
+.press-section .press-highlight-wrap .press-highlight-list li .heighlight-content {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #011945;
+  font-family: "TradeGothicNextLTProBdCn";
+}
+
+.press-section .press-highlight-wrap .press-highlight-list li .heighlight-time {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #011945;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
