@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vector space</title>
+
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Our Technology
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Press</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="section full-screen"
+    >
+      <video class="bg-video" loop muted autoplay playsinline>
+        <source src="video/our_technologies.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-1">
+            <div class="banner-intro dark-heading">
+              <h2 class="comman-banner-title">Our <span class="text-purple">technology</span></h2>
+              <div class="overlap-text overlap-bg-purple">
+                <p>
+                  Our technology powers research groups in space biosciences along with data vendors, funds, and institutions by generating on-demand NLP/NLU correlation matrix datasets. We are particularly interested in how we can get machines to trade information or exchange and transact data in a way that minimizes a selected loss function. Our objective is to enable any group analyzing data to save time by testing a hypothesis or running experiments with higher throughput. This will increase the speed of innovation, novel scientific breakthroughs, and discoveries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section large-py bg-dark-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <img src="images/real-time-scale.png" alt="real-time-scale"/>
+          </div>
+          <div class="col-md-4">
+            <div class="banner-intro mb-5">
+              <h3><span class="text-yellow">REAL-TIME</span> UPDATES AT SCALEL</h3>
+            </div>
+            <p class="text-white">Access to near real-time (NRT) datasets that update as frequently as once per minute (1440 API calls per day), allowing for near real-time correlation scores and insights that can be generated in isolation, or as an augmentation to any external or internal dataset.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="section large-py">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+              <div class="banner-intro mb-5">
+                <h2 class="comman-banner-title text-purple">APPLICATIONS</h2>
+              </div>
+              <p>Applications exist across any area of research rooted in human language, and new ways of leveraging proprietary technology is a continuous pursuit with collaborators, partners and clients. Space biosciences is a focus because of subject matter expertise pedigree and the importance of discovery in this area to humanity. We strive to better understand measures to protect and repair human DNA and relationships between diseases, genes, proteins, drug compounds and micronutrients - in many instances research is conducted across multiple areas to unlock discovery.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs custom-tab justify-content-between mt-4" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="drugcompounds-tab" data-toggle="tab" data-target="#drugcompounds" type="button" role="tab" aria-controls="drugcompounds" aria-selected="true">DRUG COMPOUNDS</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Proteins-tab" data-toggle="tab" data-target="#Proteins" type="button" role="tab" aria-controls="Proteins" aria-selected="false">Proteins</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Diseases-tab" data-toggle="tab" data-target="#Diseases" type="button" role="tab" aria-controls="Diseases" aria-selected="false">Diseases</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Genes-tab" data-toggle="tab" data-target="#Genes" type="button" role="tab" aria-controls="Genes" aria-selected="false">Genes</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Micronutrients-tab" data-toggle="tab" data-target="#Micronutrients" type="button" role="tab" aria-controls="Micronutrients" aria-selected="false">Micronutrients</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content background_bg" id="myTabContent" data-img-src="images/application-bg.jpeg">
+        <div class="tab-pane fade show active" id="drugcompounds" role="tabpanel" aria-labelledby="drugcompounds-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="application-tab-content">
+                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Proteins" role="tabpanel" aria-labelledby="Proteins-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="application-tab-content">
+                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Diseases" role="tabpanel" aria-labelledby="Diseases-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="application-tab-content">
+                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Genes" role="tabpanel" aria-labelledby="Genes-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="application-tab-content">
+                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Micronutrients" role="tabpanel" aria-labelledby="Micronutrients-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="application-tab-content">
+                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section fp-auto-height" id="section6">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="footer-left">
+                <div class="footer-brand d-flex align-items-center">
+                  <img src="images/logo.svg" alt="footer-logo" />
+                </div>
+                <div class="footer-menu mt-5 pt-5">
+                  <ul class="d-flex">
+                    <li><a href="#">Our Technology</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li><a href="#">About us</a></li>
+                    7
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-right">
+                <h6>Stay in <span>Touch</span></h6>
+                <div class="footer-form">
+                  <form action="#" class="d-flex align-items-center">
+                    <input
+                      type="text"
+                      name="mail"
+                      placeholder="Email Address"
+                    />
+                    <input type="submit" value="Subscribe" />
+                  </form>
+                </div>
+                <div class="social-list mt-5">
+                  <ul class="d-flex align-items-center mt-2">
+                    <li><a href=" #">M</a></li>
+                    <li>
+                      <a href="#"><i class="fab fa-reddit-alien"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-discord"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="d-flex justify-content-space align-items-center">
+                <div class="footer-privacy d-flex flex-wrap align-items-center">
+                  <a href="#">
+                    <h6>Privacy Policy</h6>
+                  </a>
+                  <a href="#">
+                    <h6>TERMS + CONDITIONS</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-rights">
+                <a href="#">
+                  <h6>
+                    ©2022 VECTOR SPACE BIOSCIENCES. ALL RIGHTS RESERVED
+                    WORLDWIDE. SITE BY SKAGGS
+                  </h6>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
