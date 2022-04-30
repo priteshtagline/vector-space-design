@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -17,27 +17,27 @@
     <header>
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="images/logo.svg" alt="Logo" />
           </a>
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-target="#headerMenu"
+            aria-controls="headerMenu"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="collapse navbar-collapse" id="headerMenu">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="preventdefault();"
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -47,351 +47,334 @@
                   Our Technology
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="our-technology.html">Technology</a>
+                  <a class="dropdown-item" href="scientific-collaborators.html">Scientific Collaborators</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="about-us.html">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Press</a>
+                <a class="nav-link" href="press.html">Press</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="fp-dots">
-      <ul id="menu">
-        <li data-menuanchor="content1" class="active yellow-dot">
-          <a href="#content1"><span></span></a>
-        </li>
-        <li data-menuanchor="content2" class="red-dot">
-          <a href="#content2"><span></span></a>
-        </li>
-        <li data-menuanchor="content3" class="blue-dot">
-          <a href="#content3"><span></span></a>
-        </li>
-        <li data-menuanchor="content4" class="yellow-dot">
-          <a href="#content4"><span></span></a>
-        </li>
-        <li data-menuanchor="content5" class="purple-dot">
-          <a href="#content5"><span></span></a>
-        </li>
-        <li data-menuanchor="content6" class="blue-dot">
-          <a href="#content6"><span></span></a>
-        </li>
-      </ul>
+
+    <div class="main-page-slider">
+      <div class="item">
+        <div class="section">
+          <video class="bg-video" loop muted autoplay playsinline>
+            <source src="video/driving_discovery.mp4" type="video/mp4" />
+          </video>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6">
+                <div class="banner-intro">
+                  <h1>
+                    VECTOR SPACE BIOSCIENCES IS
+                    <span class="text-yellow">DRIVING DISCOVERY</span> FOR THE BENEFIT OF ALL HUMANKIND.
+                  </h1>
+                  <p>
+                    We’re enhancing the interpretation of biological research by detecting hidden relationships to accelerate discoveries, innovation
+                    and our understanding of the world and cosmos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-down">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="scroll-wrap" data-menuanchor="content2">
+                    <a class="text-yellow" href="#content2">Scroll <span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="section">
+          <video class="bg-video" loop muted autoplay playsinline>
+            <source src="video/the_challenge.mp4" type="video/mp4" />
+          </video>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="banner-intro">
+                  <h2 class="comman-banner-title">THE <span class="text-orange">CHALLENGE</span></h2>
+                  <p class="mb-4">
+                    Working towards biological, material, and chemical solutions to combat the effects of radiation and micro-gravity during deep and
+                    extended space exploration is a requirement for the space industry to meaningfully move beyond lower earth orbit.
+                  </p>
+                  <a href="#" class="btn btn-orange">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="section">
+          <video class="bg-video" loop muted autoplay playsinline>
+            <source src="video/the_solution.mp4" type="video/mp4" />
+          </video>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="banner-intro">
+                  <h2 class="comman-banner-title">THE <span class="text-blue">SOLUTION</span></h2>
+                  <p class="mb-4">
+                    Enhance the interpretation and understanding of relationships within space bioscience research through language modeling, real
+                    time visualizations, and a network of leading scientific collaborators to inform and shape work in the field.
+                  </p>
+                  <a href="#" class="btn btn-blue">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="section">
+          <video class="bg-video" loop muted autoplay playsinline>
+            <source src="video/the_purpose.mp4" type="video/mp4" />
+          </video>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="banner-intro">
+                  <h2 class="comman-banner-title">THE <span class="text-yellow">PURPOSE</span></h2>
+                  <p class="mb-4">
+                    Advancements and innovations in space biosciences that unlock access to deeper space exploration will also result in products and
+                    services on earth ranging from therapies for diseases such as cancer through personalized medicine for all mankind.
+                  </p>
+                  <a href="#" class="btn btn-yellow">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="section">
+          <video class="bg-video" loop muted autoplay playsinline>
+            <source src="video/our_technologies.mp4" type="video/mp4" />
+          </video>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="banner-intro">
+                  <h2 class="comman-banner-title">Our <span class="text-purple">TECHNOLOGY</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="technology-wrap">
+                  <div class="row justify-content-between">
+                    <div class="col-md-6">
+                      <div class="icon-box">
+                        <div class="icon">
+                          <img src="images/relationship.svg" alt="" />
+                        </div>
+                        <div class="box-content">
+                          <h5>HIDDEN RELATIONSHIPS</h5>
+                          <p>
+                            Enhanced interpretations of biological research by detecting hidden relationships to accelerate discoveries and
+                            innovation.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="icon-box">
+                        <div class="icon">
+                          <img src="images/context-controlled.svg" alt="" />
+                        </div>
+                        <div class="box-content">
+                          <h5>CONTEXT CONTROLLED</h5>
+                          <p>
+                            Deep analysis of global trends in peer-reviewed, published, scientific papers, as well as in patents, news, internet data,
+                            and research.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="icon-box">
+                        <div class="icon">
+                          <img src="images/real-time.svg" alt="" />
+                        </div>
+                        <div class="box-content">
+                          <h5>REAL-TIME AT SCALE</h5>
+                          <p>Information is processed as it’s published from leading and widespread news and publishing sources.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="icon-box">
+                        <div class="icon">
+                          <img src="images/proven-publish.svg" alt="" />
+                        </div>
+                        <div class="box-content">
+                          <h5>PROVEN AND PUBLISHED</h5>
+                          <p>Algorithms based on variants on patent success within advanced NLP/NLU and ML (Machine Learning) applications.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center mt-4">
+                <a href="#" class="btn btn-white text-purple">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="section background_bg" data-img-src="images/collaborators-image.jpeg">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="banner-intro">
+                  <h2 class="comman-banner-title">SCIENTIFIC <span class="text-blue">COLLABORATORS</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="scientific-collaborators">
+                  <div class="row justify-content-center">
+                    <div class="col-10">
+                      <p>
+                        Speeding up the rate of scientific discoveries requires a collaborative effort comprised of multidisciplinary subject matter
+                        expert leaders that are pushing science forward. Vector Space Biosciences is proud to collaborate with the following
+                        organizations.
+                      </p>
+                      <div class="row justify-content-between">
+                        <div class="col-md-6">
+                          <div class="collaborate-logo">
+                            <img src="images/ucl.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="collaborate-logo">
+                            <img src="images/Imperial-college-london.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="collaborate-logo">
+                            <img src="images/microsoft.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="collaborate-logo">
+                            <img src="images/berkley-lab.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center mt-4">
+                <a href="#" class="btn btn-white">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="fullpage">
-      <div class="section" id="section0">
-        <video class="bg-video" loop muted data-autoplay playsinline>
-          <source src="video/driving_discovery.mp4" type="video/mp4" />
-        </video>
+    <footer class="section fp-auto-height">
+      <div class="footer-top">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-end">
             <div class="col-md-6">
-              <div class="banner-intro">
-                <h1>
-                  VECTOR SPACE BIOSCIENCES IS
-                  <span class="text-yellow">DRIVING DISCOVERY</span> FOR THE BENEFIT OF ALL HUMANKIND.
-                </h1>
-                <p>
-                  We’re enhancing the interpretation of biological research by detecting hidden relationships to accelerate discoveries, innovation
-                  and our understanding of the world and cosmos.
-                </p>
+              <div class="footer-brand">
+                <a href="index.html" title="Vector Space">
+                  <img src="images/logo.svg" alt="Vector Space" />
+                </a>
               </div>
+              <ul class="footer-menu-list">
+                <li><a href="our-technology.html">Our Technology</a></li>
+                <li><a href="scientific-collaborators.html">Applications</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="press.html">Press</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="scroll-down">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="scroll-wrap" data-menuanchor="content2">
-                  <a class="text-yellow" href="#content2">Scroll <span></span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="section1">
-        <video class="bg-video" loop muted data-autoplay playsinline>
-          <source src="video/the_challenge.mp4" type="video/mp4" />
-        </video>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="banner-intro">
-                <h2 class="comman-banner-title">THE <span class="text-orange">CHALLENGE</span></h2>
-                <p class="mb-4">
-                  Working towards biological, material, and chemical solutions to combat the effects of radiation and micro-gravity during deep and
-                  extended space exploration is a requirement for the space industry to meaningfully move beyond lower earth orbit.
-                </p>
-                <a href="#" class="btn btn-orange">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="section2">
-        <video class="bg-video" loop muted data-autoplay playsinline>
-          <source src="video/the_solution.mp4" type="video/mp4" />
-        </video>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="banner-intro">
-                <h2 class="comman-banner-title">THE <span class="text-blue">SOLUTION</span></h2>
-                <p class="mb-4">
-                  Enhance the interpretation and understanding of relationships within space bioscience research through language modeling, real time
-                  visualizations, and a network of leading scientific collaborators to inform and shape work in the field.
-                </p>
-                <a href="#" class="btn btn-blue">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="section3">
-        <video class="bg-video" loop muted data-autoplay playsinline>
-          <source src="video/the_purpose.mp4" type="video/mp4" />
-        </video>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="banner-intro">
-                <h2 class="comman-banner-title">THE <span class="text-yellow">PURPOSE</span></h2>
-                <p class="mb-4">
-                  Advancements and innovations in space biosciences that unlock access to deeper space exploration will also result in products and
-                  services on earth ranging from therapies for diseases such as cancer through personalized medicine for all mankind.
-                </p>
-                <a href="#" class="btn btn-yellow">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="section4">
-        <video class="bg-video" loop muted data-autoplay playsinline>
-          <source src="video/our_technologies.mp4" type="video/mp4" />
-        </video>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="banner-intro">
-                <h2 class="comman-banner-title">Our <span class="text-purple">TECHNOLOGY</span></h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="technology-wrap">
-                <div class="row justify-content-between">
-                  <div class="col-md-6">
-                    <div class="icon-box">
-                      <div class="icon">
-                        <img src="images/relationship.svg" alt="" />
-                      </div>
-                      <div class="box-content">
-                        <h5>HIDDEN RELATIONSHIPS</h5>
-                        <p>
-                          Enhanced interpretations of biological research by detecting hidden relationships to accelerate discoveries and innovation.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="icon-box">
-                      <div class="icon">
-                        <img src="images/context-controlled.svg" alt="" />
-                      </div>
-                      <div class="box-content">
-                        <h5>CONTEXT CONTROLLED</h5>
-                        <p>
-                          Deep analysis of global trends in peer-reviewed, published, scientific papers, as well as in patents, news, internet data,
-                          and research.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="icon-box">
-                      <div class="icon">
-                        <img src="images/real-time.svg" alt="" />
-                      </div>
-                      <div class="box-content">
-                        <h5>REAL-TIME AT SCALE</h5>
-                        <p>Information is processed as it’s published from leading and widespread news and publishing sources.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="icon-box">
-                      <div class="icon">
-                        <img src="images/proven-publish.svg" alt="" />
-                      </div>
-                      <div class="box-content">
-                        <h5>PROVEN AND PUBLISHED</h5>
-                        <p>Algorithms based on variants on patent success within advanced NLP/NLU and ML (Machine Learning) applications.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 text-center mt-4">
-              <a href="#" class="btn btn-white text-purple">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section background_bg" id="section5" data-img-src="images/collaborators-image.jpeg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="banner-intro">
-                <h2 class="comman-banner-title">SCIENTIFIC <span class="text-blue">COLLABORATORS</span></h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="scientific-collaborators">
-                <div class="row justify-content-center">
-                  <div class="col-10">
-                    <p>
-                      Speeding up the rate of scientific discoveries requires a collaborative effort comprised of multidisciplinary subject matter
-                      expert leaders that are pushing science forward. Vector Space Biosciences is proud to collaborate with the following
-                      organizations.
-                    </p>
-                    <div class="row justify-content-between">
-                      <div class="col-md-6">
-                        <div class="collaborate-logo">
-                          <img src="images/ucl.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="collaborate-logo">
-                          <img src="images/Imperial-college-london.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="collaborate-logo">
-                          <img src="images/microsoft.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="collaborate-logo">
-                          <img src="images/berkley-lab.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 text-center mt-4">
-              <a href="#" class="btn btn-white">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="section fp-auto-height" id="section6">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="footer-left">
-                  <div class="footer-brand d-flex align-items-center">
-                    <img src="images/logo.svg" alt="footer-logo" />
-                  </div>
-                  <div class="footer-menu mt-5 pt-5">
-                    <ul class="d-flex">
-                      <li><a href="#">Our Technology</a></li>
-                      <li><a href="#">Applications</a></li>
-                      <li><a href="#">About us</a></li>
-                      7
-                      <li><a href="#">Press</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="footer-right">
-                  <h6>Stay in <span>Touch</span></h6>
+            <div class="col-md-6">
+              <div class="footer-right">
+                <h6>Stay in <span>Touch</span></h6>
+                <form action="">
                   <div class="footer-form">
-                    <form action="#" class="d-flex align-items-center">
-                      <input type="text" name="mail" placeholder="Email Address" />
-                      <input type="submit" value="Subscribe" />
-                    </form>
+                    <input type="text" name="mail" placeholder="Email Address" class="form-control email-input" />
+                    <button type="submit" class="btn btn-white">Subscribe</button>
                   </div>
-                  <div class="social-list mt-5">
-                    <ul class="d-flex align-items-center mt-2">
-                      <li><a href=" #">M</a></li>
-                      <li>
-                        <a href="#"><i class="fab fa-reddit-alien"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                </form>
+                <ul class="social-list">
+                  <li><a href="javascript:;">M</a></li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-reddit-alien"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-discord"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="d-flex justify-content-space align-items-center">
-                  <div class="footer-privacy d-flex flex-wrap align-items-center">
-                    <a href="#">
-                      <h6>Privacy Policy</h6>
-                    </a>
-                    <a href="#">
-                      <h6>TERMS + CONDITIONS</h6>
-                    </a>
-                  </div>
-                </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-privacy mb-3 mb-md-0">
+                <a href="javascript:;">
+                  <h6>Privacy Policy</h6>
+                </a>
+                <a href="javascript:;">
+                  <h6>TERMS + CONDITIONS</h6>
+                </a>
               </div>
-              <div class="col-md-6">
-                <div class="footer-rights">
-                  <a href="#">
-                    <h6>©2022 VECTOR SPACE BIOSCIENCES. ALL RIGHTS RESERVED WORLDWIDE. SITE BY SKAGGS</h6>
-                  </a>
-                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-privacy">
+                <a href="javascript:;">
+                  <h6>©2022 VECTOR SPACE BIOSCIENCES. ALL RIGHTS RESERVED WORLDWIDE. SITE BY SKAGGS</h6>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
