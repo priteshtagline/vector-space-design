@@ -28,6 +28,9 @@ li {
 }
 p {
     line-height: 26px;
+    @media screen and (max-width: 480px) {
+        font-size: 14px;
+    }
 }
 img {
     max-width: 100%;
@@ -111,13 +114,16 @@ img {
     @media screen and (max-width: 991px) {
         font-size: 50px;
         line-height: 42px;
+        margin-bottom: 35px;
     }
     @media screen and (max-width: 767px) {
         font-size: 40px;
         line-height: 32px;
+        margin-bottom: 30px;
     }
     @media screen and (max-width: 575px) {
         font-size: 30px;
+        margin-bottom: 20px;
     }
     &.dark-heading {
         h2 {
@@ -370,11 +376,38 @@ footer {
 .section {
     padding: 250px 0 80px;
     position: relative;
+    @media screen and (max-width: 992px) {
+        padding: 200px 0 70px;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 150px 0 60px;
+    }
+    @media screen and (max-width: 575px) {
+        padding: 100px 0 50px;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 50px 0 40px;
+    }
     &.large-py {
         padding: 200px 0;
+        @media screen and (max-width: 992px) {
+            padding: 150px 0;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 100px 0;
+        }
+        @media screen and (max-width: 575px) {
+            padding: 50px 0;
+        }
     }
     &.small-py {
         padding: 70px 0;
+        @media screen and (max-width: 992px) {
+            padding: 50px 0;
+        }
+        @media screen and (max-width: 575px) {
+            padding: 30px 0;
+        }
     }
 }
 footer {
@@ -415,6 +448,15 @@ footer {
     h3 {
         font-size: 40px;
         color: #fff;
+        @media screen and (max-width: 991px) {
+            font-size: 30px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 20px;
+        }
     }
     &.dark-heading {
         h2 {
@@ -687,6 +729,9 @@ footer {
     position: relative;
     padding: 30px 30px 30px 0;
     z-index: 1;
+    @media screen and (max-width: 767px) {
+        padding: 20px 20px 20px 0;
+    }
     &::before {
         content: "";
         left: -100%;
@@ -712,6 +757,12 @@ footer {
     p {
         font-size: 18px;
         margin-bottom: 0;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 14px;
+        }
     }
 }
 .collaborators-logo {
@@ -915,9 +966,66 @@ footer {
     }
 }
 .mission-text {
-    margin-top: 150px;
+    padding-top: 70px;
+    margin-top: 70px;
+    @media screen and (max-width: 991px) {
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 575px) {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    &.mission-border-shape {
+        position: relative;
+        @media screen and (max-width: 767px) {
+            padding-top: 50px;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 575px) {
+            padding-top: 30px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 100%;
+            height: 80px;
+            width: 1px;
+            background-color: #fff;
+            @media screen and (max-width: 991px) {
+                height: 50px;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto -15px;
+            bottom: 100%;
+            height: 15px;
+            border-radius: 100%;
+            width: 15px;
+            border: 1px solid #fff;
+            @media screen and (max-width: 991px) {
+                height: 11px;
+                width: 11px;
+                margin: 0 auto -11px;
+            }
+        }
+    }
     p {
         color: #fff;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 .process-step-wrap {
@@ -982,6 +1090,15 @@ footer {
     background-color: rgba(114, 157, 173, 0.76);
     padding: 45px 80px;
     margin-top: 60px;
+    @media screen and (max-width: 991px) {
+        padding: 35px 60px;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 25px 40px;
+    }
+    @media screen and (max-width: 575px) {
+        padding: 15px 20px;
+    }
     h2 {
         color: #fff;
         margin-bottom: 20px
