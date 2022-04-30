@@ -135,11 +135,11 @@ img {
 }
 
 .container {
-    @media screen and (min-width: 1440px) {
-        max-width: 1240px;
-    }
     @media screen and (min-width: 991px) {
         max-width: 1024px;
+    }
+    @media screen and (min-width: 1440px) {
+        max-width: 1240px;
     }
 }
 
@@ -229,6 +229,24 @@ header {
                     }
                     @media screen and (max-width: 767px) {
                         padding: 15px 0;
+                    }
+                }
+                & a.active {
+                    color: #fff;
+                }
+                .dropdown-item {
+                    font-size: 18px;
+                    padding: 6px 20px;
+                    color: $theme-primary-color;
+                    font-family: Trade Gothic Next LT Pro Cn;
+                    &:hover,
+                    &.active,
+                    &:focus {
+                        background: rgba(1, 25, 69, 0.6) 0% 0% no-repeat padding-box;
+                        color: #fff;
+                    }
+                    &:focus-visible {
+                        outline: none;
                     }
                 }
             }

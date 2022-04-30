@@ -136,15 +136,15 @@ img {
   /* IE6-9 */
 }
 
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1240px;
-  }
-}
-
 @media screen and (min-width: 991px) {
   .container {
     max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1240px;
   }
 }
 
@@ -261,6 +261,26 @@ header .navbar .navbar-nav li a.nav-link {
   header .navbar .navbar-nav li a.nav-link {
     padding: 15px 0;
   }
+}
+
+header .navbar .navbar-nav li a.active {
+  color: #fff;
+}
+
+header .navbar .navbar-nav li .dropdown-item {
+  font-size: 18px;
+  padding: 6px 20px;
+  color: #011945;
+  font-family: Trade Gothic Next LT Pro Cn;
+}
+
+header .navbar .navbar-nav li .dropdown-item:hover, header .navbar .navbar-nav li .dropdown-item.active, header .navbar .navbar-nav li .dropdown-item:focus {
+  background: rgba(1, 25, 69, 0.6) 0% 0% no-repeat padding-box;
+  color: #fff;
+}
+
+header .navbar .navbar-nav li .dropdown-item:focus-visible {
+  outline: none;
 }
 
 footer {
