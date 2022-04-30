@@ -16,28 +16,28 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="images/logo.svg" alt="Logo" />
           </a>
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-target="#headerMenu"
+            aria-controls="headerMenu"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="collapse navbar-collapse" id="headerMenu">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="preventdefault();"
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -47,29 +47,26 @@
                   Our Technology
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="our-technology.html">Technology</a>
+                  <a class="dropdown-item" href="scientific-collaborators.html">Scientific Collaborators</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="about-us.html">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Press</a>
+                <a class="nav-link" href="press.html">Press</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div
-      class="section full-screen"
-    >
+
+    <div class="section full-screen">
       <video class="bg-video" loop muted autoplay playsinline>
         <source src="video/our_technologies.mp4" type="video/mp4" />
       </video>
@@ -80,7 +77,11 @@
               <h2 class="comman-banner-title">Our <span class="text-purple">technology</span></h2>
               <div class="overlap-text overlap-bg-purple">
                 <p>
-                  Our technology powers research groups in space biosciences along with data vendors, funds, and institutions by generating on-demand NLP/NLU correlation matrix datasets. We are particularly interested in how we can get machines to trade information or exchange and transact data in a way that minimizes a selected loss function. Our objective is to enable any group analyzing data to save time by testing a hypothesis or running experiments with higher throughput. This will increase the speed of innovation, novel scientific breakthroughs, and discoveries.
+                  Our technology powers research groups in space biosciences along with data vendors, funds, and institutions by generating on-demand
+                  NLP/NLU correlation matrix datasets. We are particularly interested in how we can get machines to trade information or exchange and
+                  transact data in a way that minimizes a selected loss function. Our objective is to enable any group analyzing data to save time by
+                  testing a hypothesis or running experiments with higher throughput. This will increase the speed of innovation, novel scientific
+                  breakthroughs, and discoveries.
                 </p>
               </div>
             </div>
@@ -88,132 +89,228 @@
         </div>
       </div>
     </div>
+
     <div class="section large-py bg-dark-blue">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <img src="images/real-time-scale.png" alt="real-time-scale"/>
+            <img src="images/real-time-scale.png" alt="real-time-scale" />
           </div>
           <div class="col-md-4">
-            <div class="banner-intro mb-5">
+            <div class="banner-intro mt-4 mt-md-0 mb-5">
               <h3><span class="text-yellow">REAL-TIME</span> UPDATES AT SCALEL</h3>
             </div>
-            <p class="text-white">Access to near real-time (NRT) datasets that update as frequently as once per minute (1440 API calls per day), allowing for near real-time correlation scores and insights that can be generated in isolation, or as an augmentation to any external or internal dataset.</p>
+            <p class="text-white">
+              Access to near real-time (NRT) datasets that update as frequently as once per minute (1440 API calls per day), allowing for near
+              real-time correlation scores and insights that can be generated in isolation, or as an augmentation to any external or internal dataset.
+            </p>
           </div>
         </div>
       </div>
-      </div>
     </div>
+
     <div class="section large-py pb-0">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-              <div class="banner-intro mb-5">
-                <h2 class="comman-banner-title text-purple">APPLICATIONS</h2>
-              </div>
-              <p>Applications exist across any area of research rooted in human language, and new ways of leveraging proprietary technology is a continuous pursuit with collaborators, partners and clients. Space biosciences is a focus because of subject matter expertise pedigree and the importance of discovery in this area to humanity. We strive to better understand measures to protect and repair human DNA and relationships between diseases, genes, proteins, drug compounds and micronutrients - in many instances research is conducted across multiple areas to unlock discovery.</p>
+            <div class="banner-intro mb-5">
+              <h2 class="comman-banner-title text-purple">APPLICATIONS</h2>
+            </div>
+            <p>
+              Applications exist across any area of research rooted in human language, and new ways of leveraging proprietary technology is a
+              continuous pursuit with collaborators, partners and clients. Space biosciences is a focus because of subject matter expertise pedigree
+              and the importance of discovery in this area to humanity. We strive to better understand measures to protect and repair human DNA and
+              relationships between diseases, genes, proteins, drug compounds and micronutrients - in many instances research is conducted across
+              multiple areas to unlock discovery.
+            </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 application-tab">
             <ul class="nav nav-tabs custom-tab justify-content-between mt-4" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="drugcompounds-tab" data-toggle="tab" data-target="#drugcompounds" type="button" role="tab" aria-controls="drugcompounds" aria-selected="true">DRUG COMPOUNDS</button>
+                <button
+                  class="nav-link active"
+                  id="drugcompounds-tab"
+                  data-toggle="tab"
+                  data-target="#drugcompounds"
+                  type="button"
+                  role="tab"
+                  aria-controls="drugcompounds"
+                  aria-selected="true"
+                >
+                  DRUG COMPOUNDS
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="Proteins-tab" data-toggle="tab" data-target="#Proteins" type="button" role="tab" aria-controls="Proteins" aria-selected="false">Proteins</button>
+                <button
+                  class="nav-link"
+                  id="Proteins-tab"
+                  data-toggle="tab"
+                  data-target="#Proteins"
+                  type="button"
+                  role="tab"
+                  aria-controls="Proteins"
+                  aria-selected="false"
+                >
+                  Proteins
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="Diseases-tab" data-toggle="tab" data-target="#Diseases" type="button" role="tab" aria-controls="Diseases" aria-selected="false">Diseases</button>
+                <button
+                  class="nav-link"
+                  id="Diseases-tab"
+                  data-toggle="tab"
+                  data-target="#Diseases"
+                  type="button"
+                  role="tab"
+                  aria-controls="Diseases"
+                  aria-selected="false"
+                >
+                  Diseases
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="Genes-tab" data-toggle="tab" data-target="#Genes" type="button" role="tab" aria-controls="Genes" aria-selected="false">Genes</button>
+                <button
+                  class="nav-link"
+                  id="Genes-tab"
+                  data-toggle="tab"
+                  data-target="#Genes"
+                  type="button"
+                  role="tab"
+                  aria-controls="Genes"
+                  aria-selected="false"
+                >
+                  Genes
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="Micronutrients-tab" data-toggle="tab" data-target="#Micronutrients" type="button" role="tab" aria-controls="Micronutrients" aria-selected="false">Micronutrients</button>
+                <button
+                  class="nav-link"
+                  id="Micronutrients-tab"
+                  data-toggle="tab"
+                  data-target="#Micronutrients"
+                  type="button"
+                  role="tab"
+                  aria-controls="Micronutrients"
+                  aria-selected="false"
+                >
+                  Micronutrients
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="tab-content background_bg" id="myTabContent" data-img-src="images/application-bg.jpeg">
+      <div class="tab-content background_bg" id="applicationtabContent" data-img-src="images/application-bg.jpeg">
         <div class="tab-pane fade show active" id="drugcompounds" role="tabpanel" aria-labelledby="drugcompounds-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="application-tab-content">
-                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
-                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="application-tab-content">
+                  <p>
+                    A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing
+                    therapies and treatments.
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="Proteins" role="tabpanel" aria-labelledby="Proteins-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="application-tab-content">
-                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
-                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="application-tab-content">
+                  <p>
+                    A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing
+                    therapies and treatments.
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="Diseases" role="tabpanel" aria-labelledby="Diseases-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="application-tab-content">
-                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
-                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="application-tab-content">
+                  <p>
+                    A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing
+                    therapies and treatments.
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="Genes" role="tabpanel" aria-labelledby="Genes-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="application-tab-content">
-                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
-                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="application-tab-content">
+                  <p>
+                    A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing
+                    therapies and treatments.
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="Micronutrients" role="tabpanel" aria-labelledby="Micronutrients-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="application-tab-content">
-                    <p>A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing therapies and treatments.</p>
-                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="application-tab-content">
+                  <p>
+                    A pharmaceutical commercial development team working to innovate and drive drug compound related discoveries for new and existing
+                    therapies and treatments.
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section small-py technology-features">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h5>Security</h5>
-            <p>Datasets represent a large attack surface in overall data security associated to AI and ML pipelines. Knowing the origin of data sources, calculations, algorithms, timestamps along with any other changes remain critical for today’s scientific data engineering pipelines.</p>
+            <p>
+              Datasets represent a large attack surface in overall data security associated to AI and ML pipelines. Knowing the origin of data
+              sources, calculations, algorithms, timestamps along with any other changes remain critical for today’s scientific data engineering
+              pipelines.
+            </p>
             <h5>Data Provenance, governance, lineage</h5>
-            <p>Data provenance, governance, and lineage are indispensable to research: knowing where your data comes from and how reliable it is are particularly important in Bioscience, so our Data Provenance Pipeline (DPP) hash controls data lineage.</p>
+            <p>
+              Data provenance, governance, and lineage are indispensable to research: knowing where your data comes from and how reliable it is are
+              particularly important in Bioscience, so our Data Provenance Pipeline (DPP) hash controls data lineage.
+            </p>
             <h5>VXV Utility</h5>
-            <p>VXV token wallet-enabled API key allows any company to subscribe to our API services in order to stream NLP/NLU context-controlled datasets on-demand. Tiered subscription levels, each requiring a different amount of VXV, allow for specialized services and give advanced users options on select, high-value datasets.</p>
+            <p>
+              VXV token wallet-enabled API key allows any company to subscribe to our API services in order to stream NLP/NLU context-controlled
+              datasets on-demand. Tiered subscription levels, each requiring a different amount of VXV, allow for specialized services and give
+              advanced users options on select, high-value datasets.
+            </p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section small-py cta-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-7">
             <h3>Request a Dataset with Custom Features</h3>
-            <p>While our NLP/NLU datasets are endlessly customizable and can be leveraged by any industry, we also provide access to many high quality data sources out-of-the-box.</p>
+            <p>
+              While our NLP/NLU datasets are endlessly customizable and can be leveraged by any industry, we also provide access to many high quality
+              data sources out-of-the-box.
+            </p>
           </div>
           <div class="col-md-5">
             <div class="contact-info">
@@ -224,57 +321,49 @@
         </div>
       </div>
     </div>
-    <footer class="section fp-auto-height" id="section6">
+
+    <footer class="section fp-auto-height">
       <div class="footer-top">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-end">
             <div class="col-md-6">
-              <div class="footer-left">
-                <div class="footer-brand d-flex align-items-center">
-                  <img src="images/logo.svg" alt="footer-logo" />
-                </div>
-                <div class="footer-menu mt-5 pt-5">
-                  <ul class="d-flex">
-                    <li><a href="#">Our Technology</a></li>
-                    <li><a href="#">Applications</a></li>
-                    <li><a href="#">About us</a></li>
-                    7
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
+              <div class="footer-brand">
+                <a href="index.html" title="Vector Space">
+                  <img src="images/logo.svg" alt="Vector Space" />
+                </a>
               </div>
+              <ul class="footer-menu-list">
+                <li><a href="our-technology.html">Our Technology</a></li>
+                <li><a href="scientific-collaborators.html">Applications</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="press.html">Press</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
             </div>
             <div class="col-md-6">
               <div class="footer-right">
                 <h6>Stay in <span>Touch</span></h6>
-                <div class="footer-form">
-                  <form action="#" class="d-flex align-items-center">
-                    <input
-                      type="text"
-                      name="mail"
-                      placeholder="Email Address"
-                    />
-                    <input type="submit" value="Subscribe" />
-                  </form>
-                </div>
-                <div class="social-list mt-5">
-                  <ul class="d-flex align-items-center mt-2">
-                    <li><a href=" #">M</a></li>
-                    <li>
-                      <a href="#"><i class="fab fa-reddit-alien"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-discord"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                    </li>
-                  </ul>
-                </div>
+                <form action="">
+                  <div class="footer-form">
+                    <input type="text" name="mail" placeholder="Email Address" class="form-control email-input" />
+                    <button type="submit" class="btn btn-white">Subscribe</button>
+                  </div>
+                </form>
+                <ul class="social-list">
+                  <li><a href="javascript:;">M</a></li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-reddit-alien"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-discord"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -284,24 +373,19 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
-              <div class="d-flex justify-content-space align-items-center">
-                <div class="footer-privacy d-flex flex-wrap align-items-center">
-                  <a href="#">
-                    <h6>Privacy Policy</h6>
-                  </a>
-                  <a href="#">
-                    <h6>TERMS + CONDITIONS</h6>
-                  </a>
-                </div>
+              <div class="footer-privacy mb-3 mb-md-0">
+                <a href="javascript:;">
+                  <h6>Privacy Policy</h6>
+                </a>
+                <a href="javascript:;">
+                  <h6>TERMS + CONDITIONS</h6>
+                </a>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="footer-rights">
-                <a href="#">
-                  <h6>
-                    ©2022 VECTOR SPACE BIOSCIENCES. ALL RIGHTS RESERVED
-                    WORLDWIDE. SITE BY SKAGGS
-                  </h6>
+              <div class="footer-privacy">
+                <a href="javascript:;">
+                  <h6>©2022 VECTOR SPACE BIOSCIENCES. ALL RIGHTS RESERVED WORLDWIDE. SITE BY SKAGGS</h6>
                 </a>
               </div>
             </div>
@@ -309,6 +393,7 @@
         </div>
       </div>
     </footer>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
