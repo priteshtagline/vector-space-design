@@ -44,7 +44,9 @@ p {
     }
 }
 
-img {
+img,
+video,
+iframe {
     max-width: 100%;
 }
 
@@ -396,7 +398,7 @@ footer {
 }
 
 .section {
-    padding: 250px 0 80px;
+    padding: 230px 0 80px;
     position: relative;
     @media screen and (max-width: 992px) {
         padding: 200px 0 70px;
@@ -510,6 +512,7 @@ footer {
         border: 0;
         .section {
             height: 100vh;
+            background-position: bottom !important;
             // @media screen and (min-width: 768px) {
             //     display: flex;
             //     align-items: center;

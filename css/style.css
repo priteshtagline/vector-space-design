@@ -45,7 +45,9 @@ p {
   }
 }
 
-img {
+img,
+video,
+iframe {
   max-width: 100%;
 }
 
@@ -485,7 +487,7 @@ footer .footer-bottom .footer-privacy a h6 {
 }
 
 .section {
-  padding: 250px 0 80px;
+  padding: 230px 0 80px;
   position: relative;
 }
 
@@ -644,6 +646,7 @@ footer.section {
 
 .main-page-slider .slick-slide .section {
   height: 100vh;
+  background-position: bottom !important;
 }
 
 .main-page-slider .slick-dots {

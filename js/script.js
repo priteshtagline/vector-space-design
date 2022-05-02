@@ -6,8 +6,11 @@ if ($(".main-page-slider").length > 0) {
     vertical: true,
     verticalSwiping: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 6000,
     slidesToShow: 1,
   });
+
   // const slider = $(".main-page-slider");
 
   // slider.on("wheel", function (e) {
