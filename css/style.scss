@@ -760,6 +760,67 @@ footer {
     }
 }
 
+.quotes-box-wrapper {
+    margin-top: 100px;
+    max-width: 481px;
+    padding: 0 15px;
+    margin-left: auto;
+    @media screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+    p {
+        font-family: "Trade Gothic Next LT Pro Cn";
+        font-size: 28px;
+        color: #fff;
+        color: #fff;
+        display: inline;
+        position: relative;
+        line-height: 36px;
+        @media screen and (max-width: 576px) {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &::before {
+            content: "“";
+            position: absolute;
+            left: -40px;
+            font-size: 70px;
+            color: #e4dd86;
+            @media screen and (max-width: 576px) {
+                font-size: 50px;
+                left: -25px;
+            }
+        }
+        &::after {
+            content: "”";
+            font-size: 70px;
+            color: #e4dd86;
+            line-height: 0;
+            bottom: 0;
+            vertical-align: bottom;
+            margin-bottom: -10px;
+            display: inline-block;
+            margin-left: 10px;
+            @media screen and (max-width: 576px) {
+                font-size: 50px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    label {
+        display: block;
+        text-align: right;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        margin-top: 30px;
+        color: #e4dd86;
+        @media screen and (max-width: 576px) {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
 .home-technology-section {
     max-width: 1024px;
 }
@@ -769,16 +830,27 @@ footer {
     padding: 60px;
     position: relative;
     backdrop-filter: blur(15px);
+    @media screen and (max-width: 576px) {
+        padding: 15px;
+    }
 }
 
 .icon-box {
     margin-top: 50px;
     max-width: 400px;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
     .icon {
         float: left;
         width: 90px;
         text-align: center;
         margin-right: 20px;
+        @media screen and (max-width: 576px) {
+            width: 30px;
+            margin-right: 10px;
+        }
     }
     .box-content {
         overflow: hidden;
@@ -787,10 +859,17 @@ footer {
             text-transform: uppercase;
             margin-bottom: 20px;
             font-size: 28px;
+            @media screen and (max-width: 576px) {
+                margin-bottom: 3px;
+                font-size: 18px;
+            }
         }
         p {
             color: #fff;
             margin-bottom: 0;
+            @media screen and (max-width: 576px) {
+                line-height: 20px;
+            }
         }
     }
 }

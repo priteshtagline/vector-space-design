@@ -9,9 +9,15 @@ if ($("#fullpage").length > 0) {
     loopBottom: false,
     afterResponsive: function (isResponsive) {},
     afterRender: function () {
-      setInterval(function () {
-        fullpage_api.moveSectionDown();
-      }, 6000);
+      // if (window.innerWidth > 768) {
+      //   setInterval(function () {
+      //     fullpage_api.moveSectionDown();
+      //   }, 6000);
+      // } else {
+      //   setInterval(function () {
+      //     fullpage_api.moveSectionDown();
+      //   }, 12000);
+      // }
     },
   });
 }

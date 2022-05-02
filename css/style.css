@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -927,6 +928,86 @@ footer.section {
   background-color: #729bad;
 }
 
+.quotes-box-wrapper {
+  margin-top: 100px;
+  max-width: 481px;
+  padding: 0 15px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .quotes-box-wrapper {
+    margin-top: 20px;
+  }
+}
+
+.quotes-box-wrapper p {
+  font-family: "Trade Gothic Next LT Pro Cn";
+  font-size: 28px;
+  color: #fff;
+  color: #fff;
+  display: inline;
+  position: relative;
+  line-height: 36px;
+}
+
+@media screen and (max-width: 576px) {
+  .quotes-box-wrapper p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.quotes-box-wrapper p::before {
+  content: "“";
+  position: absolute;
+  left: -40px;
+  font-size: 70px;
+  color: #e4dd86;
+}
+
+@media screen and (max-width: 576px) {
+  .quotes-box-wrapper p::before {
+    font-size: 50px;
+    left: -25px;
+  }
+}
+
+.quotes-box-wrapper p::after {
+  content: "”";
+  font-size: 70px;
+  color: #e4dd86;
+  line-height: 0;
+  bottom: 0;
+  vertical-align: bottom;
+  margin-bottom: -10px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .quotes-box-wrapper p::after {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+}
+
+.quotes-box-wrapper label {
+  display: block;
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+  color: #e4dd86;
+}
+
+@media screen and (max-width: 576px) {
+  .quotes-box-wrapper label {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
 .home-technology-section {
   max-width: 1024px;
 }
@@ -939,9 +1020,22 @@ footer.section {
           backdrop-filter: blur(15px);
 }
 
+@media screen and (max-width: 576px) {
+  .technology-wrap {
+    padding: 15px;
+  }
+}
+
 .icon-box {
   margin-top: 50px;
   max-width: 400px;
+}
+
+@media screen and (max-width: 576px) {
+  .icon-box {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
 }
 
 .icon-box .icon {
@@ -949,6 +1043,13 @@ footer.section {
   width: 90px;
   text-align: center;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .icon-box .icon {
+    width: 30px;
+    margin-right: 10px;
+  }
 }
 
 .icon-box .box-content {
@@ -962,9 +1063,22 @@ footer.section {
   font-size: 28px;
 }
 
+@media screen and (max-width: 576px) {
+  .icon-box .box-content h5 {
+    margin-bottom: 3px;
+    font-size: 18px;
+  }
+}
+
 .icon-box .box-content p {
   color: #fff;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .icon-box .box-content p {
+    line-height: 20px;
+  }
 }
 
 [class*="col-md"]:nth-child(-n + 2) .icon-box {
