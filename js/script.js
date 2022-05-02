@@ -1,26 +1,18 @@
-if ($(".main-page-slider").length > 0) {
-  $(".main-page-slider").slick({
-    dots: true,
-    infinite: false,
-    arrows: false,
-    vertical: true,
-    verticalSwiping: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    slidesToShow: 1,
+if ($("#fullpage").length > 0) {
+  var myFullpage = new fullpage("#fullpage", {
+    anchors: ["content1", "content2", "content3", "content4", "content5", "content6"],
+    menu: "#menu",
+    navigation: false,
+    navigationTooltips: ["First page", "Second page", "Third and last page"],
+    responsiveWidth: 900,
+    loopBottom: false,
+    afterResponsive: function (isResponsive) {},
+    afterRender: function () {
+      setInterval(function () {
+        fullpage_api.moveSectionDown();
+      }, 6000);
+    },
   });
-
-  // const slider = $(".main-page-slider");
-
-  // slider.on("wheel", function (e) {
-  //   if (e.originalEvent.deltaY < 0) {
-  //     $(this).slick("slickPrev");
-  //   } else {
-  //     e.preventDefault();
-  //     $(this).slick("slickNext");
-  //   }
-  // });
 }
 
 $(".background_bg").each(function () {
