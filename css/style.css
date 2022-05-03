@@ -211,6 +211,12 @@ header .navbar {
 }
 
 @media screen and (max-width: 767px) {
+  header .navbar .container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   header .navbar {
     padding: 15px;
     border-bottom: 0.5px solid #f0f3ef;
@@ -280,7 +286,7 @@ header .navbar .navbar-nav li a.nav-link {
 
 @media screen and (max-width: 1024px) {
   header .navbar .navbar-nav li a.nav-link {
-    padding: 10px 22px;
+    padding: 10px 15px;
   }
 }
 
@@ -394,6 +400,12 @@ footer {
   border-top: 0.5px solid #f0f3ef;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
+}
+
+@media screen and (max-width: 767px) {
+  footer .container {
+    max-width: 100%;
+  }
 }
 
 footer.section {
