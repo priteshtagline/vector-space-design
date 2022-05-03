@@ -1,23 +1,23 @@
 // Home page slider
 if ($("#fullpage").length > 0) {
   var myFullpage = new fullpage("#fullpage", {
-    anchors: ["content1", "content2", "content3", "content4", "content5", "content6"],
+    anchors: ["driving-discovery", "the-challange", "the-solution", "the-purpose", "our-technology", "scintific-collaborators", "footer"],
     menu: "#menu",
     navigation: false,
-    navigationTooltips: ["First page", "Second page", "Third and last page"],
     responsiveWidth: 900,
     loopBottom: false,
+    licenseKey: "",
     afterResponsive: function (isResponsive) {},
     afterRender: function () {
-      // if (window.innerWidth > 768) {
-      //   setInterval(function () {
-      //     fullpage_api.moveSectionDown();
-      //   }, 6000);
-      // } else {
-      //   setInterval(function () {
-      //     fullpage_api.moveSectionDown();
-      //   }, 12000);
-      // }
+      if (window.innerWidth > 768) {
+        setInterval(function () {
+          fullpage_api.moveSectionDown();
+        }, 6000);
+      } else {
+        setInterval(function () {
+          fullpage_api.moveSectionDown();
+        }, 12000);
+      }
     },
   });
 }

@@ -800,35 +800,9 @@ footer.section {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 576px) {
-  .banner-intro h1 {
-    font-size: 25px;
-    margin-bottom: 20px;
-    line-height: 42px;
-  }
-}
-
 .banner-intro h3 {
   font-size: 40px;
   color: #fff;
-}
-
-@media screen and (max-width: 991px) {
-  .banner-intro h3 {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .banner-intro h3 {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .banner-intro h3 {
-    font-size: 20px;
-  }
 }
 
 .banner-intro.dark-heading h2 {
@@ -1020,22 +994,9 @@ footer.section {
           backdrop-filter: blur(15px);
 }
 
-@media screen and (max-width: 576px) {
-  .technology-wrap {
-    padding: 15px;
-  }
-}
-
 .icon-box {
   margin-top: 50px;
   max-width: 400px;
-}
-
-@media screen and (max-width: 576px) {
-  .icon-box {
-    margin-bottom: 10px;
-    margin-top: 0;
-  }
 }
 
 .icon-box .icon {
@@ -1043,13 +1004,6 @@ footer.section {
   width: 90px;
   text-align: center;
   margin-right: 20px;
-}
-
-@media screen and (max-width: 576px) {
-  .icon-box .icon {
-    width: 30px;
-    margin-right: 10px;
-  }
 }
 
 .icon-box .box-content {
@@ -1063,22 +1017,9 @@ footer.section {
   font-size: 28px;
 }
 
-@media screen and (max-width: 576px) {
-  .icon-box .box-content h5 {
-    margin-bottom: 3px;
-    font-size: 18px;
-  }
-}
-
 .icon-box .box-content p {
   color: #fff;
   margin-bottom: 0;
-}
-
-@media screen and (max-width: 576px) {
-  .icon-box .box-content p {
-    line-height: 20px;
-  }
 }
 
 [class*="col-md"]:nth-child(-n + 2) .icon-box {
@@ -1311,6 +1252,10 @@ footer.section {
 
 .contact-section {
   min-height: 1154px;
+}
+
+.contact-section .container {
+  max-width: 1024px;
 }
 
 @media screen and (max-width: 767px) {
