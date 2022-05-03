@@ -8,17 +8,6 @@ if ($("#fullpage").length > 0) {
     loopBottom: false,
     licenseKey: "",
     afterResponsive: function (isResponsive) {},
-    afterRender: function () {
-      if (window.innerWidth > 768) {
-        setInterval(function () {
-          fullpage_api.moveSectionDown();
-        }, 6000);
-      } else {
-        setInterval(function () {
-          fullpage_api.moveSectionDown();
-        }, 12000);
-      }
-    },
   });
 }
 
