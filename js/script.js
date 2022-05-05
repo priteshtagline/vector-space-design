@@ -1,3 +1,17 @@
+// Add active in menu JQuery
+
+jQuery(function ($) {
+  var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+  $(".navbar-nav li a").each(function () {
+    if ($(this).attr("href") == pgurl || $(this).attr("href") == "") {
+      $(this).addClass("active");
+      if ($(this).hasClass("active")) {
+        $(this).parent().parent(".dropdown").children(".dropdown-toggle").addClass("active");
+      }
+    }
+  });
+});
+
 // Home page slider
 if ($("#fullpage").length > 0) {
   var myFullpage = new fullpage("#fullpage", {
@@ -8,6 +22,13 @@ if ($("#fullpage").length > 0) {
     loopBottom: false,
     licenseKey: "",
     afterResponsive: function (isResponsive) {},
+    afterLoad: function () {
+      if ($("footer.fp-section").hasClass("active")) {
+        $(".fp-dots").addClass("fp-dots-overwrap");
+      } else {
+        $(".fp-dots").removeClass("fp-dots-overwrap");
+      }
+    },
   });
 }
 

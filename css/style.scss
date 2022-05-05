@@ -565,6 +565,13 @@ footer {
     -webkit-transform: none;
     transform: none;
     bottom: 0;
+    transition: all 0.2s ease-in-out;
+    &.fp-dots-overwrap {
+        bottom: calc(0px - -265px);
+        @media screen and (max-width: 676px) {
+            display: none;
+        }
+    }
     @media screen and (max-width: 767px) {
         top: auto;
         bottom: 3%;
@@ -933,14 +940,12 @@ footer {
 }
 
 .collaborate-section {
-    min-height: 1400px;
+    min-height: 1000px;
+    background-position: bottom !important;
     @media screen and (max-width: 1199px) {
-        min-height: 1000px;
+        min-height: 850px;
     }
     @media screen and (max-width: 991px) {
-        min-height: 800px;
-    }
-    @media screen and (max-width: 767px) {
         min-height: auto;
     }
 }

@@ -707,6 +707,18 @@ footer .footer-bottom .footer-privacy a h6 {
   -webkit-transform: none;
   transform: none;
   bottom: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.fp-dots.fp-dots-overwrap {
+  bottom: calc(0px - -265px);
+}
+
+@media screen and (max-width: 676px) {
+  .fp-dots.fp-dots-overwrap {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1154,22 +1166,17 @@ footer .footer-bottom .footer-privacy a h6 {
 }
 
 .collaborate-section {
-  min-height: 1400px;
+  min-height: 1000px;
+  background-position: bottom !important;
 }
 
 @media screen and (max-width: 1199px) {
   .collaborate-section {
-    min-height: 1000px;
+    min-height: 850px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .collaborate-section {
-    min-height: 800px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .collaborate-section {
     min-height: auto;
   }
