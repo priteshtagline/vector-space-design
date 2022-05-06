@@ -55,3 +55,23 @@ if (window.innerWidth < 992) {
     $(this).toggleClass("open");
   });
 }
+
+// Our technology page slider
+
+if ($("#OurTechnologySlider").length > 0) {
+  $("#OurTechnologySlider").slick({
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    vertical: true,
+    verticalSwiping: true,
+  });
+}
+
+// Open nav dropdown on hover
+
+if (window.innerWidth > 767) {
+  $(".dropdown").hover(function () {
+    $(".dropdown-toggle").dropdown("toggle");
+  });
+}

@@ -305,6 +305,12 @@ header .navbar .navbar-nav li.dropdown.show .dropdown-toggle::after {
           transform: rotate(180deg);
 }
 
+header .navbar .navbar-nav li.dropdown.show .dropdown-toggle:focus-visible {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
 @media screen and (max-width: 768px) {
   header .navbar .navbar-nav li .dropdown-menu {
     background: transparent;
@@ -1261,6 +1267,138 @@ footer .footer-bottom .footer-privacy a h6 {
   max-width: 100%;
   margin: 0 auto;
   display: table;
+}
+
+.our-technology-slider {
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+
+.our-technology-slider .item {
+  height: calc(100vh - 128px);
+}
+
+.our-technology-slider .item .technology-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.our-technology-slider .slick-dots {
+  position: absolute;
+  z-index: 100;
+  -webkit-transform: none;
+          transform: none;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .our-technology-slider .slick-dots {
+    top: 0px;
+    left: 3%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-technology-slider .slick-dots {
+    bottom: 5%;
+    right: 0;
+    left: 0;
+  }
+}
+
+.our-technology-slider .slick-dots li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-technology-slider .slick-dots li {
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-technology-slider .slick-dots li::before, .our-technology-slider .slick-dots li::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    height: calc(50% - 6px);
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.our-technology-slider .slick-dots li::before {
+  top: 0;
+}
+
+.our-technology-slider .slick-dots li::after {
+  bottom: 0;
+}
+
+.our-technology-slider .slick-dots li button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 0;
+  font-size: 0;
+}
+
+.our-technology-slider .slick-dots li:first-child.slick-active button {
+  border-color: #f4ec7e;
+  background-color: #f4ec7e;
+}
+
+.our-technology-slider .slick-dots li:nth-child(2).slick-active button {
+  border-color: #e57d54;
+  background-color: #e57d54;
+}
+
+.our-technology-slider .slick-dots li:nth-child(3).slick-active button {
+  border-color: #729bad;
+  background-color: #729dad;
+}
+
+.our-technology-slider .slick-dots li:last-child.slick-active button {
+  border-color: #4b00d9;
+  background-color: #4b00d9;
 }
 
 .application-tab {
