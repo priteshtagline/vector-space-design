@@ -1599,10 +1599,17 @@ footer .footer-bottom .footer-privacy a h6 {
 }
 
 .press-section .press-highlight-wrap .press-highlight-list li .heighlight-content {
-  font-size: 20px;
   margin-bottom: 8px;
+}
+
+.press-section .press-highlight-wrap .press-highlight-list li .heighlight-content a {
+  font-size: 20px;
   color: #011945;
   font-family: "TradeGothicNextLTProBdCn";
+}
+
+.press-section .press-highlight-wrap .press-highlight-list li .heighlight-content a:hover {
+  text-decoration: none;
 }
 
 .press-section .press-highlight-wrap .press-highlight-list li .heighlight-time {

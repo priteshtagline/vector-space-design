@@ -1277,10 +1277,15 @@ footer {
             li {
                 margin-bottom: 30px;
                 .heighlight-content {
-                    font-size: 20px;
                     margin-bottom: 8px;
-                    color: $theme-primary-color;
-                    font-family: "TradeGothicNextLTProBdCn";
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        font-size: 20px;
+                        color: $theme-primary-color;
+                        font-family: "TradeGothicNextLTProBdCn";
+                    }
                 }
                 .heighlight-time {
                     font-size: 14px;
