@@ -74,7 +74,7 @@ iframe {
 
 .btn {
     border-radius: 40px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 8px 25px;
     font-family: "Trade Gothic Next LT Pro Cn";
 }
@@ -157,7 +157,7 @@ iframe {
     line-height: 52px;
     font-size: 60px;
     font-family: "TradeGothicNextLTProBdCn";
-    text-transform: uppercase;
+    text-transform: capitalize;
     &.text-purple-color {
         color: $theme-primary-color;
     }
@@ -217,7 +217,7 @@ header {
                 font-size: 18px;
                 font-weight: 700;
                 margin-bottom: 0;
-                text-transform: uppercase;
+                text-transform: capitalize;
             }
         }
         .navbar-collapse {
@@ -247,7 +247,7 @@ header {
                     color: $theme-secodary-color;
                     font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
                     color: $theme-secodary-color;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     opacity: 1;
                     @media screen and (max-width: 1024px) {
                         padding: 10px 15px;
@@ -375,7 +375,7 @@ footer {
                 font-size: 18px;
                 font-weight: 700;
                 margin-bottom: 0;
-                text-transform: uppercase;
+                text-transform: capitalize;
             }
         }
         .footer-menu-list {
@@ -396,7 +396,7 @@ footer {
                 a {
                     font: normal normal bold 16px/20px Trade Gothic Next LT Pro Cn;
                     color: $theme-secodary-color;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     text-decoration: none;
                 }
             }
@@ -404,7 +404,7 @@ footer {
         .footer-right {
             h6 {
                 font-size: 20px;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 color: #ffffff;
                 margin-bottom: 15px;
                 span {
@@ -482,7 +482,7 @@ footer {
                 h6 {
                     font: normal normal normal 13px/17px Trade Gothic Next LT Pro Cn;
                     color: $theme-secodary-color;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     margin-right: 17px;
                     margin-bottom: 0;
                     @media screen and (max-width: 576px) {
@@ -665,7 +665,7 @@ footer {
         margin-bottom: 40px;
         line-height: 52px;
         font-family: "TradeGothicNextLTProBdCn";
-        text-transform: uppercase;
+        text-transform: capitalize;
         @media screen and (max-width: 576px) {
             font-size: 25px;
             margin-bottom: 20px;
@@ -727,7 +727,7 @@ footer {
     bottom: 10%;
     left: 0;
     right: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: "TradeGothicNextLTProBdCn";
     @media screen and (max-width: 767px) {
         left: auto;
@@ -864,7 +864,7 @@ footer {
 
 .icon-box {
     margin-top: 50px;
-    max-width: 400px;
+    max-width: 500px;
     @media screen and (max-width: 576px) {
         margin-bottom: 10px;
         margin-top: 0;
@@ -883,7 +883,7 @@ footer {
         overflow: hidden;
         h5 {
             color: #fff;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin-bottom: 20px;
             font-size: 28px;
             @media screen and (max-width: 576px) {
@@ -1033,7 +1033,7 @@ footer {
                 border-right: 0;
                 border-left: 0;
                 border-radius: 0;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 cursor: pointer;
                 font-family: "TradeGothicNextLTProBdCn";
                 font-size: 20px;
@@ -1104,7 +1104,7 @@ footer {
                 label {
                     font-family: "Trade Gothic Next LT Pro Cn";
                     font-weight: bold;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     font-size: 16px;
                     color: #fff;
                 }
@@ -1183,7 +1183,7 @@ footer {
 
 .technology-features {
     h5 {
-        text-transform: uppercase;
+        text-transform: capitalize;
         color: $theme-primary-color;
         font-family: "TradeGothicNextLTProBdCn";
         margin-bottom: 10px;
@@ -1199,7 +1199,7 @@ footer {
 .cta-section {
     background-color: $theme-primary-light;
     h3 {
-        text-transform: uppercase;
+        text-transform: capitalize;
         color: #fff;
         margin-bottom: 20px;
     }
@@ -1222,7 +1222,7 @@ footer {
     }
     h5 {
         color: #fff;
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin-bottom: 25px;
     }
 }
