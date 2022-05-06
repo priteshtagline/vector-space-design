@@ -72,6 +72,10 @@ if ($("#OurTechnologySlider").length > 0) {
 
 if (window.innerWidth > 767) {
   $(".dropdown").hover(function () {
-    $(".dropdown-toggle").dropdown("toggle");
+    $(".dropdown-toggle").toggleClass("show");
+    $(".dropdown-menu").toggleClass("show");
   });
 }
+$(".mobile_arrow").on("click", function () {
+  $(this).parent("li").toggleClass("dropdown-open");
+});

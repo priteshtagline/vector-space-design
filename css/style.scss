@@ -258,8 +258,38 @@ header {
                 }
                 & a.active {
                     color: #fff;
+                    & + .mobile_arrow svg {
+                        stroke: #fff;
+                    }
+                }
+                &.dropdown-open {
+                    .dropdown-menu {
+                        display: block;
+                    }
                 }
                 &.dropdown {
+                    .mobile_arrow {
+                        display: none;
+                        svg {
+                            width: 25px;
+                            height: 25px;
+                            stroke: $theme-secodary-color;
+                        }
+                        @media screen and (max-width: 767px) {
+                            display: block;
+                            position: absolute;
+                            top: 15px;
+                            right: 0;
+                        }
+                    }
+                    .dropdown-toggle {
+                        position: relative;
+                        &::after {
+                            @media screen and (max-width: 767px) {
+                                display: none;
+                            }
+                        }
+                    }
                     &.show {
                         .dropdown-toggle {
                             &::after {

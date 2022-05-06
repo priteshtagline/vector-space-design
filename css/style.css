@@ -300,6 +300,43 @@ header .navbar .navbar-nav li a.active {
   color: #fff;
 }
 
+header .navbar .navbar-nav li a.active + .mobile_arrow svg {
+  stroke: #fff;
+}
+
+header .navbar .navbar-nav li.dropdown-open .dropdown-menu {
+  display: block;
+}
+
+header .navbar .navbar-nav li.dropdown .mobile_arrow {
+  display: none;
+}
+
+header .navbar .navbar-nav li.dropdown .mobile_arrow svg {
+  width: 25px;
+  height: 25px;
+  stroke: #f4ec7e;
+}
+
+@media screen and (max-width: 767px) {
+  header .navbar .navbar-nav li.dropdown .mobile_arrow {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+}
+
+header .navbar .navbar-nav li.dropdown .dropdown-toggle {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  header .navbar .navbar-nav li.dropdown .dropdown-toggle::after {
+    display: none;
+  }
+}
+
 header .navbar .navbar-nav li.dropdown.show .dropdown-toggle::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
