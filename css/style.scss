@@ -193,7 +193,7 @@ header {
         padding: 35px 0px;
         backdrop-filter: blur(6px);
         .container {
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 1024px) {
                 max-width: 100%;
             }
         }
@@ -249,6 +249,9 @@ header {
                     color: $theme-secodary-color;
                     text-transform: capitalize;
                     opacity: 1;
+                    @media screen and (max-width: 1440px) {
+                        padding: 10px 25px;
+                    }
                     @media screen and (max-width: 1024px) {
                         padding: 10px 15px;
                     }

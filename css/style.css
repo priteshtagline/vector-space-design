@@ -210,7 +210,7 @@ header .navbar {
           backdrop-filter: blur(6px);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   header .navbar .container {
     max-width: 100%;
   }
@@ -282,6 +282,12 @@ header .navbar .navbar-nav li a.nav-link {
   color: #f4ec7e;
   text-transform: capitalize;
   opacity: 1;
+}
+
+@media screen and (max-width: 1440px) {
+  header .navbar .navbar-nav li a.nav-link {
+    padding: 10px 25px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
