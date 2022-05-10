@@ -59,13 +59,23 @@ if (window.innerWidth < 992) {
 // Our technology page slider
 
 if ($("#OurTechnologySlider").length > 0) {
-  $("#OurTechnologySlider").slick({
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    vertical: true,
-    verticalSwiping: true,
-  });
+  if (innerWidth > 767) {
+    $("#OurTechnologySlider").slick({
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      vertical: true,
+      verticalSwiping: true,
+    });
+  } else {
+    $("#OurTechnologySlider").slick({
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      vertical: false,
+      verticalSwiping: false,
+    });
+  }
 }
 
 // Open nav dropdown on hover
